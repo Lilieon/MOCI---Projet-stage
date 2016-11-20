@@ -1,4 +1,3 @@
-
 %Copyright 2014 Jean-Philippe Eisenbarth
 %This program is free software: you can 
 %redistribute it and/or modify it under the terms of the GNU General Public 
@@ -41,6 +40,9 @@
 
 %}
 \usepackage{hyperref}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{Diagramme/ADMIN/} {Diagramme/ELEVE/} {Diagramme/ENSEIGNANT/} {Diagramme/ENTREPRISE/} {Diagramme/SCOLARITE/} }
 \begin{document}
 
 \begin{flushright}
@@ -54,7 +56,7 @@
         \vspace{1.9cm}
         \LARGE{Version \myversion approved}\\
         \vspace{1.9cm}
-        Réalisé par $<$author$>$\\
+        RÃ©alisÃ© par $<$author$>$\\
         \vspace{1.9cm}
         $<$Telecom Nancy$>$\\
         \vspace{1.9cm}
@@ -108,12 +110,12 @@ $<$Le syst\`eme doit permettre aux utilisateurs d'effectuer diff\'erentes action
 \section{Acteurs}
 \subsection{\'El\`eve}
 $<$
-Il se caract\'erise par : son nom, son pr\'enom, son adresse e-mail, sa date de naissance, son sexe, sa promotion et son approfondissement. Il peut \'editer son adresse et son num\'ero de t\'el\'ephone, via la page “profil”.
+Il se caract\'erise par : son nom, son pr\'enom, son adresse e-mail, sa date de naissance, son sexe, sa promotion et son approfondissement. Il peut \'editer son adresse et son num\'ero de t\'el\'ephone, via la page â€œprofilâ€.
 $>$
 
 \subsection{Ma\^itre de stage}
 $<$
-Il se d\'efinit par son nom, son pr\'enom, sa fonction, son t\'el\'ephone, fax et email. Il appartient \`a un service, lui-m\^eme caract\'eris\'e par son nom et son adresse postale, appartenant à l’entreprise définit par son nom, son adresse, son t\'el\'ephone, fax, email, site web,  num\'ero de SIRET, effectif… Ces informations sont fournies par l’\'el\`eve lors de l’\'edition d’une fiche de renseignement ; les acc\`es \`a la plateforme pour le ma\^itre de stage sont eux cr\'ees par l’administration.
+Il se d\'efinit par son nom, son pr\'enom, sa fonction, son t\'el\'ephone, fax et email. Il appartient \`a un service, lui-m\^eme caract\'eris\'e par son nom et son adresse postale, appartenant Ã  lâ€™entreprise dÃ©finit par son nom, son adresse, son t\'el\'ephone, fax, email, site web,  num\'ero de SIRET, effectifâ€¦ Ces informations sont fournies par lâ€™\'el\`eve lors de lâ€™\'edition dâ€™une fiche de renseignement ; les acc\`es \`a la plateforme pour le ma\^itre de stage sont eux cr\'ees par lâ€™administration.
 $>$
 
 \subsection{Tuteur acad\'emique}
@@ -133,12 +135,12 @@ Compte super utilisateur, il distingue les responsables de stage et le directeur
 $>$
 
 \section{Fonctionnalit\'es}
-$<$Le syst\`eme doit permettre aux utilisateurs d’effectuer diff\'erentes actions relatives \'a la gestion des stages.
+$<$Le syst\`eme doit permettre aux utilisateurs dâ€™effectuer diff\'erentes actions relatives \'a la gestion des stages.
 \subsection{Gestion des utilisateurs}
 Tous les utilisateurs :
 \begin{itemize}
 \item tous les utilisateurs se connectent \`a leur espace avec les identifiants qui leur ont \'et\'e fournis
-\item tous les utilisateurs acc\`edent et \'editent leurs informations personnelles de contact (adresse, t\'el\'ephone…)
+\item tous les utilisateurs acc\`edent et \'editent leurs informations personnelles de contact (adresse, t\'el\'ephoneâ€¦)
 \end{itemize}
 Scolarit\'e :
 \begin{itemize}
@@ -147,9 +149,9 @@ Scolarit\'e :
 \end{itemize}
 Administration : 
 \begin{itemize}
-\item l’administration g\`ere les utilisateurs et leurs droits
-\item l’administration attribue tuteur et ma\^itre de stage \`a un \'el\`eve
-\item l’administration acc\`ede aux statistiques du syst\`eme
+\item lâ€™administration g\`ere les utilisateurs et leurs droits
+\item lâ€™administration attribue tuteur et ma\^itre de stage \`a un \'el\`eve
+\item lâ€™administration acc\`ede aux statistiques du syst\`eme
 \end{itemize}
 
 \subsection{Gestion des documents}
@@ -157,17 +159,17 @@ Tous les utilisateurs :
 \begin{itemize}
 \item tous les utilisateurs, hormis les ma\^itres de stage, acc\`edent \`a la fiche de suivi des stages
 \item tous les utilisateurs acc\`edent aux documents auxquels ils sont attach\'es et peuvent les t\'el\'echarger
-\item \'el\`eves, directeur d’\'ecole, ma\^itres de stage et responsables des stages signent \'electroniquement les conventions auxquelles ils sont li\'es
+\item \'el\`eves, directeur dâ€™\'ecole, ma\^itres de stage et responsables des stages signent \'electroniquement les conventions auxquelles ils sont li\'es
 \end{itemize}
 \'El\`eves :
 \begin{itemize}
 \item les \'el\`eves d\'eposent et t\'el\'echargent leurs rapports de stage et documents administratifs (attestation de non plagiat, assurance, s\'ecurit\'e sociale)
 \item les \'el\`eves peuvent r\'ecup\'erer le template \`a leur disposition pour le rapport de stage
-\item les \'el\`eves ont la possibilit\'e d’attribuer le statut confidentiel \`a leur rapport de stage
+\item les \'el\`eves ont la possibilit\'e dâ€™attribuer le statut confidentiel \`a leur rapport de stage
 \item les \'el\`eves remplissent en ligne les informations n\'ecessaires pour leur(s) fiche(s) de renseignement :
 \begin{itemize}
-\item ils peuvent remplir plusieurs premi\`eres parties “Renseignements n\'ecessaires pour valider le stage”
-\item dès lors qu’au moins l’une d’entre elles a \'et\'e valid\'ee, ils peuvent ensuite remplir la seconde partie associée “Renseignements complémentaires pour éditer la convention” de l’entreprise dans laquelle ils veulent effectuer leur stage
+\item ils peuvent remplir plusieurs premi\`eres parties â€œRenseignements n\'ecessaires pour valider le stageâ€
+\item dÃ¨s lors quâ€™au moins lâ€™une dâ€™entre elles a \'et\'e valid\'ee, ils peuvent ensuite remplir la seconde partie associÃ©e â€œRenseignements complÃ©mentaires pour Ã©diter la conventionâ€ de lâ€™entreprise dans laquelle ils veulent effectuer leur stage
 \end{itemize}
 \end{itemize}
 Responsables des stages :  
@@ -176,8 +178,8 @@ Responsables des stages :
 \end{itemize}
 Ma\^itres des stages : 
 \begin{itemize}
-\item les ma\^itres de stage remplissent l’\'evaluation de stage de l’\'el\`eve et attribuent une note
-\item les ma\^itres de stages valident le rapport d\'epos\'e par l’\'el\`eve
+\item les ma\^itres de stage remplissent lâ€™\'evaluation de stage de lâ€™\'el\`eve et attribuent une note
+\item les ma\^itres de stages valident le rapport d\'epos\'e par lâ€™\'el\`eve
 \end{itemize}
 Tuteurs acad\'emique
 \begin{itemize}
@@ -185,25 +187,25 @@ Tuteurs acad\'emique
 \end{itemize}
 Syst\`eme :
 \begin{itemize}
-\item le syst\`eme \'edite automatiquement la convention de stage lorsque l’\'el\`eve a compl\'et\'e la partie 2 d’une fiche de renseignement valid\'ee
+\item le syst\`eme \'edite automatiquement la convention de stage lorsque lâ€™\'el\`eve a compl\'et\'e la partie 2 dâ€™une fiche de renseignement valid\'ee
 \end{itemize}
 
 \subsection{Gestion des \'ev\`enements}
 Scolarit\'e :
 \begin{itemize}
-\item la scolarit\'e \'etablit les plannings des dates cl\'es de stage (dates limites de d\'ep\^ot, planning des soutenances…)
+\item la scolarit\'e \'etablit les plannings des dates cl\'es de stage (dates limites de d\'ep\^ot, planning des soutenancesâ€¦)
 \end{itemize}
 
-Elèves :
+ElÃ¨ves :
 \begin{itemize}
 \item les \'el\`eves, tuteurs acad\'emiques et ma\^itres de stage doivent respecter les \'ech\'eances de d\'ep\^ot de document ou de validation
 \end{itemize}
 
 
-Système :
+SystÃ¨me :
 \begin{itemize}
-\item le syst\`eme notifie automatiquement les utilisateurs lorsqu’une action requiert leur attention
-le syst\`eme valide automatiquement les stages des \'el\`eves selon leurs notes (de stage,de rapport et de soutenance) et le barème
+\item le syst\`eme notifie automatiquement les utilisateurs lorsquâ€™une action requiert leur attention
+le syst\`eme valide automatiquement les stages des \'el\`eves selon leurs notes (de stage,de rapport et de soutenance) et le barÃ¨me
 \end{itemize}
 $>$
 
@@ -214,45 +216,45 @@ Acteurs : Tous
 \\
 \'Etapes :
 \begin{enumerate}
-\item L’acteur entre son adresse email et son mot de passe de l’universit\'e puis valide
-\item Le syst\`eme v\'erifie les informations et notifie l’acteur qu’il est bien connect\'e
+\item Lâ€™acteur entre son adresse email et son mot de passe de lâ€™universit\'e puis valide
+\item Le syst\`eme v\'erifie les informations et notifie lâ€™acteur quâ€™il est bien connect\'e
 \end{enumerate} 
 Alternative : 
 \begin{enumerate}
-\item L’acteur entre son adresse mail et mot de passe de l’universit\'e puis valide
-\item Le syst\`eme v\'erifie les informations et notifie l’acteur que ses informations sont erron\'ees. Il invite l’utilisateur \`a essayer \`a nouveau
+\item Lâ€™acteur entre son adresse mail et mot de passe de lâ€™universit\'e puis valide
+\item Le syst\`eme v\'erifie les informations et notifie lâ€™acteur que ses informations sont erron\'ees. Il invite lâ€™utilisateur \`a essayer \`a nouveau
 \end{enumerate}
-\subsection{Gérer ses informations personnelles}
+\subsection{GÃ©rer ses informations personnelles}
 Acteurs : Tous 
 \\
 \'Etapes : 
 \begin{enumerate}
-\item L’acteur se rend sur son compte
-\item Le syst\`eme affiche le compte de l’utilisateur 
-\item L’acteur modifie ses informations \'editables
-\item Le syst\`eme notifie \`a l’acteur que ses modifications ont bien \'et\'e enregistr\'ees
-\item (4bis) Le système notifie l’acteur qu’une erreur s’est produite et que ses modifications n’ont pas été prise en compte
+\item Lâ€™acteur se rend sur son compte
+\item Le syst\`eme affiche le compte de lâ€™utilisateur 
+\item Lâ€™acteur modifie ses informations \'editables
+\item Le syst\`eme notifie \`a lâ€™acteur que ses modifications ont bien \'et\'e enregistr\'ees
+\item (4bis) Le systÃ¨me notifie lâ€™acteur quâ€™une erreur sâ€™est produite et que ses modifications nâ€™ont pas Ã©tÃ© prise en compte
 \end{enumerate}
 \subsection{Acc\'eder \`a la fiche de suivi}
 Acteurs : Tous sauf Ma\^itres de stage
 \\
 \'Etapes : 
 \begin{enumerate}
-\item L’acteur acc\`ede \`a la page de la fiche de suivi
+\item Lâ€™acteur acc\`ede \`a la page de la fiche de suivi
 \item Le syst\`eme renvoie les informations sous forme de tableau et un lien pour les t\'el\'echarger
-\item L’acteur t\'el\'echarge le document
+\item Lâ€™acteur t\'el\'echarge le document
 \end{enumerate}
 \subsection{D\'ep\^ot d'un document relatif au stage}
 Acteurs : \'El\`eves 
 \\
 \'Etapes : 
 \begin{enumerate}
-\item L’acteur acc\`ede \`a la page relative au document
+\item Lâ€™acteur acc\`ede \`a la page relative au document
 \item Le syst\`eme affiche la page demand\'ee
-\item L’acteur t\'el\'echarge le document sur le site
-\item Le syst\`eme notifie l’acteur que l’op\'eration s’est bien d\'eroul\'ee 
-\item (4bis) Le syst\`eme notifie l’acteur que son document n’est pas valide et lui propose de r\'eessayer
-\item Le syst\`eme envoie une notification aux acteurs concern\'es qu’un document a \'et\'e d\'epos\'e
+\item Lâ€™acteur t\'el\'echarge le document sur le site
+\item Le syst\`eme notifie lâ€™acteur que lâ€™op\'eration sâ€™est bien d\'eroul\'ee 
+\item (4bis) Le syst\`eme notifie lâ€™acteur que son document nâ€™est pas valide et lui propose de r\'eessayer
+\item Le syst\`eme envoie une notification aux acteurs concern\'es quâ€™un document a \'et\'e d\'epos\'e
 \end{enumerate}
 \subsection{Acc\'eder \`a un document relatif au stage}
 Acteurs :
@@ -262,35 +264,35 @@ Acteurs :
 \end{itemize}
 \'Etapes :
 \begin{enumerate}
-\item L’acteur demande le document
+\item Lâ€™acteur demande le document
 \item Le syst\`eme renvoie le document
-\item L’acteur t\'el\'echarge/imprime le document
+\item Lâ€™acteur t\'el\'echarge/imprime le document
 \end{enumerate}
-\subsection{Remplir le questionnaire d’\'evaluation du stage}
+\subsection{Remplir le questionnaire dâ€™\'evaluation du stage}
 Acteurs : Ma\^itres de stage 
 \\
 \'Etapes : 
 \begin{enumerate}
-\item L’acteur acc\`ede \`a l’annuaire des \'el\`eves pour lesquels il est le ma\^itre de stage
+\item Lâ€™acteur acc\`ede \`a lâ€™annuaire des \'el\`eves pour lesquels il est le ma\^itre de stage
 \item Le syst\`eme affiche les \'el\`eves concern\'es
-\item L’acteur s\'electionne un \'el\`eve
-\item Le syst\`eme affiche la fiche d\'etaill\'ee de l’\'el\`eve
-\item L’acteur acc\`ede au questionnaire 
-\item L’acteur rempli le questionnaire 
-\item L’acteur valide le questionnaire
-\item (7bis) L’acteur enregistre le questionnaire sans l’avoir termin\'e
-\item Le syst\`eme notifie l’acteur que son document a bien \'et\'e enregistr\'e
-\item Le syst\`eme notifie les acteurs concern\'es que le questionnaire a \'et\'e rempli par l’entreprise
+\item Lâ€™acteur s\'electionne un \'el\`eve
+\item Le syst\`eme affiche la fiche d\'etaill\'ee de lâ€™\'el\`eve
+\item Lâ€™acteur acc\`ede au questionnaire 
+\item Lâ€™acteur rempli le questionnaire 
+\item Lâ€™acteur valide le questionnaire
+\item (7bis) Lâ€™acteur enregistre le questionnaire sans lâ€™avoir termin\'e
+\item Le syst\`eme notifie lâ€™acteur que son document a bien \'et\'e enregistr\'e
+\item Le syst\`eme notifie les acteurs concern\'es que le questionnaire a \'et\'e rempli par lâ€™entreprise
 \end{enumerate}
 \subsection{Noter les rapports et soutenances de stage}
 \subsection{Signature de la convention}
-Acteurs : directeur d’\'ecole (administration), \'el\`eves, responsables des stages et ma\^itres de stage
+Acteurs : directeur dâ€™\'ecole (administration), \'el\`eves, responsables des stages et ma\^itres de stage
 \\
 \'Etapes : 
 \begin{enumerate}
-\item L’acteur demande la convention 
+\item Lâ€™acteur demande la convention 
 \item Le syst\`eme renvoie la convention
-\item L’acteur signe la convention
+\item Lâ€™acteur signe la convention
 \item Le syst\`eme notifie les autres acteurs
 \end{enumerate}
 $>$
@@ -309,8 +311,77 @@ $<$
 $>$
 
 \section{Diagrammes de s\'equence}
-$<$
-$>$
+
+\subsection{Pour les Ã©lÃ¨ves}
+
+
+\includegraphics[width=\textwidth]{"Remplir la fiche de renseignements"}
+
+\includegraphics[width=\textwidth]{"Acceder a son compte et suivre son stage"}
+
+\includegraphics[width=\textwidth]{"Signer la convention et la consulter"}
+
+\includegraphics[width=\textwidth]{"Editer son profil"}
+
+\includegraphics[width=\textwidth]{"Deposer et consulter son rapport"}
+
+\includegraphics[width=\textwidth]{"Consulter les avis de l'entreprise"}
+
+\includegraphics[width=\textwidth]{"Telecharger un template du rapport"}
+
+\subsection{Pour la scolaritÃ©}
+
+
+\includegraphics[width=\textwidth]{"Acceder a la liste des entreprises"}
+
+\includegraphics[width=\textwidth]{"Elaborer le planning des soutenances"}
+
+\includegraphics[width=\textwidth]{"Gerer les passages et redoublements"}
+
+\includegraphics[width=\textwidth]{"Recuperer les rapports"}
+
+\includegraphics[width=\textwidth]{"Suivre les comptes etudiants"}
+
+
+\subsection{Pour l'entreprise}
+
+\includegraphics[width=\textwidth]{"Acceder au rapport"}
+
+\includegraphics[width=\textwidth]{"Accepter visite"}
+
+\includegraphics[width=\textwidth]{"Donner son avis sur le stage etudiant"}
+
+\includegraphics[width=\textwidth]{"Remplir le questionnaire d'evaluation"}
+
+\includegraphics[width=\textwidth]{"Signer - remplir la convention"}
+
+\includegraphics[width=\textwidth]{"Suivre son stagiaire"}
+
+\includegraphics[width=\textwidth]{"Valider la diffusion du rapport"}
+
+\subsection{Pour l'administration}
+
+\includegraphics[width=\textwidth]{"Acceder a la fiche de renseignements et autres documents"}
+
+\includegraphics[width=\textwidth]{"Gerer des statistiques"}
+
+\includegraphics[width=\textwidth]{"Gerer attribution du tuteur academique"}
+
+\includegraphics[width=\textwidth]{"Valider les stages"}
+
+
+\subsection{Pour l'enseignant}
+
+\includegraphics[width=\textwidth]{"Acceder a la fiche de renseignements et autres documents2"}
+
+\includegraphics[width=\textwidth]{"Acceder aux informations"}
+
+\includegraphics[width=\textwidth]{"Demander pour faire une visite"}
+
+\includegraphics[width=\textwidth]{"Donner une note - un avis"}
+
+
+
 
 \section{Besoins non fonctionnels}
 $<$
@@ -326,22 +397,22 @@ $<$
 
 \subsection{Li\'es aux \'ev\`enements}
 \begin{itemize}
-\item Les \'el\'ements dont l’\'ech\'eance est pass\'ee ne doivent plus \^etre modifiables
-\item Toutes les notifications apparaissent sur le compte de l’utilisateur et sont automatiquement envoy\'ees par email
+\item Les \'el\'ements dont lâ€™\'ech\'eance est pass\'ee ne doivent plus \^etre modifiables
+\item Toutes les notifications apparaissent sur le compte de lâ€™utilisateur et sont automatiquement envoy\'ees par email
 \end{itemize}
 
 \subsection{Li\'es aux utilisateurs}
 \begin{itemize}
-\item Par d\'efaut, tous les utilisateurs passent \`a l’ann\'ee sup\'erieure s’ils sont en 2A
-\item apr\`es deux ans d’inactivit\'e, les comptes utilisateurs sont automatiquement supprim\'es
+\item Par d\'efaut, tous les utilisateurs passent \`a lâ€™ann\'ee sup\'erieure sâ€™ils sont en 2A
+\item apr\`es deux ans dâ€™inactivit\'e, les comptes utilisateurs sont automatiquement supprim\'es
 \end{itemize}
 
 \subsection{Li\'es aux documents}
 \begin{itemize}
-\item la partie 2 de la fiche de renseignement ne doit pouvoir \^etre compl\'et\'ee que si la partie 1 correspondante a \'et\'e remplie en int\'egralit\'e et valid\'ee num\'eriquement par le responsable des stages de l’ann\'ee concern\'ee
-\item lorsque l’\'el\`eve compl\`ete la partie 1 de la fiche de renseignement, le formulaire lui propose de remplir automatiquement l’adresse du lieu du stage si celui-ci correspond au lieu du stage. Sinon, les champs lui sont fournis pour entrer l’adresse manuellement
-\item avant de signer la convention de stage, lorsque celui-ci a lieu à l’\'etranger, l’attestation de s\'ecurit\'e sociale doit avoir \'et\'e ajout\'ee aux documents administratifs
-\item avant d’ajouter le rapport de stage, lorsque l’\'el\`eve est en 3A, l’attestation de non plagiat doit avoir \'et\'e d\'epos\'ee dans les documents administratifs
+\item la partie 2 de la fiche de renseignement ne doit pouvoir \^etre compl\'et\'ee que si la partie 1 correspondante a \'et\'e remplie en int\'egralit\'e et valid\'ee num\'eriquement par le responsable des stages de lâ€™ann\'ee concern\'ee
+\item lorsque lâ€™\'el\`eve compl\`ete la partie 1 de la fiche de renseignement, le formulaire lui propose de remplir automatiquement lâ€™adresse du lieu du stage si celui-ci correspond au lieu du stage. Sinon, les champs lui sont fournis pour entrer lâ€™adresse manuellement
+\item avant de signer la convention de stage, lorsque celui-ci a lieu Ã  lâ€™\'etranger, lâ€™attestation de s\'ecurit\'e sociale doit avoir \'et\'e ajout\'ee aux documents administratifs
+\item avant dâ€™ajouter le rapport de stage, lorsque lâ€™\'el\`eve est en 3A, lâ€™attestation de non plagiat doit avoir \'et\'e d\'epos\'ee dans les documents administratifs
 \end{itemize}
  
 \subsection{Li\'es aux performances}
@@ -368,4 +439,4 @@ in the SRS so they can be tracked to closure.$>$
 
 \end{document}
 Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
+Â© 2016 GitHub, Inc. Terms Privacy Security Status Help
