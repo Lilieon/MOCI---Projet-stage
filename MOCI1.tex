@@ -267,6 +267,41 @@ Acteurs :
 \item Le syst\`eme renvoie le document
 \item L’acteur t\'el\'echarge/imprime le document
 \end{enumerate}
+
+
+\subsection{Rendre le rapport confidentiel}
+Acteurs : élèves
+\\
+\'Etapes : 
+\begin{enumerate}
+\item l’acteur se rend sur la page du rapport de stage et coche “confidentiel”
+\item Le système demande confirmation à l’acteur en l’informant des conséquences
+\item L’acteur confirme 
+\item Le système notifie l’acteur que sa demande a bien été prise en compte
+\item Le système notifie les acteurs concernés de la modification
+\item Le système ajoute le filigrane “confidentiel” 
+\item (4bis) Le système notifie l’acteur qu’une erreur s’est produite 
+\end{enumerate}
+
+
+\subsection{Valider la fiche de renseignement et le rapport de stage}
+Acteurs :
+\begin{itemize}
+\item responsables des stages pour la fiche de renseignement
+\item maîtres de stages pour le rapport
+\end{itemize}
+
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur se rend sur la page du document
+\item Le système affiche la page
+\item L’acteur valide le document
+\item Le système notifie l’acteur que sa validation a bien été enregistrée
+\item (4bis) Le système notifie l’acteur qu’une erreur s’est produite et l’invite à réessayer ultérieurement
+\item Le système notifie les acteurs concernés que la fiche de renseignement/le rapport a été validé
+\end{enumerate}
+
+
 \subsection{Remplir le questionnaire d’\'evaluation du stage}
 Acteurs : Ma\^itres de stage 
 \\
@@ -283,7 +318,24 @@ Acteurs : Ma\^itres de stage
 \item Le syst\`eme notifie l’acteur que son document a bien \'et\'e enregistr\'e
 \item Le syst\`eme notifie les acteurs concern\'es que le questionnaire a \'et\'e rempli par l’entreprise
 \end{enumerate}
+
+
 \subsection{Noter les rapports et soutenances de stage}
+Acteurs : Tuteurs académiques
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur accède à l’annuaire des élèves pour lesquels il est le tuteur
+\item Le système affiche les élèves
+\item L’acteur sélectionne un élève
+\item Le système affiche la fiche détaillée de l’élève
+\item L’acteur note l’élève
+\item Le système notifie l’acteur que sa note a bien été prise en compte
+\item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le renvoie sur la fiche de l’étudiant
+\item Le système notifie les acteurs concernés que la note pour un élève a été entrée
+\end{enumerate}
+
+
 \subsection{Signature de la convention}
 Acteurs : directeur d’\'ecole (administration), \'el\`eves, responsables des stages et ma\^itres de stage
 \\
@@ -294,7 +346,143 @@ Acteurs : directeur d’\'ecole (administration), \'el\`eves, responsables des s
 \item L’acteur signe la convention
 \item Le syst\`eme notifie les autres acteurs
 \end{enumerate}
-ss
+
+
+\subsection{Accéder à l’annuaire}
+Acteurs : scolarité
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur va sur la page de l’annuaire
+\item Le système lui renvoie l’annuaire de l’année universitaire en cours
+\item (2bis) Le système notifie l’acteur qu’une erreur s’est produite
+\end{enumerate}
+
+
+\subsection{Gérer le planning}
+Acteurs : scolarité
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur accède au planning
+\item Le système lui renvoie le planning
+\item L’acteur ajoute un événement avec des personnes et un lieu (le lieu n’est alors plus disponible pour ce créneau) 
+\item Le système notifie l’acteur que son événement a bien été ajouté
+\item Le système notifie les acteurs concernés de l’ajout de l’événement
+\item (4bis) Le système notifie l’acteur que l’événement n’a pas pu être créé et le renvoie sur le planning
+\item Alternative : (1bis) L’acteur choisit un élève dans l’annuaire puis sélectionne planning (ajout automatique de l’événement à la personne) -> étape 4
+\end{enumerate}
+
+
+\subsection{Etablir les statistiques}
+Acteurs : administration
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur accède à la page
+\item Le système lui renvoie la page
+\item L’acteur choisit les éléments sur lesquels il souhaite afficher les statistiques
+\item Le système affiche les éléments sur la durée définie
+\item L’acteur peut télécharger ces résultats
+\item (4bis) Le système notifie qu’une erreur s’est produite à cause du choix des éléments incompatibles et invite l’acteur effectuer une autre opération ou choisir d’autres éléments
+\item (4ter) Le système notifie qu’une erreur inconnue s’est produite et l’invite à réessayer ultérieurement
+\end{enumerate}
+
+
+
+ 
+\subsection{Gérer les droits des utilisateurs}
+Acteurs : administration
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur un annuaire de l’ensemble des usagers
+\item Le système affiche l’ensemble des utilisateurs avec quelques informations
+\item L’acteur sélectionne une personne ou un groupe de personne
+\item Le système affiche ces personnes
+\item (4bis) Le système notifie l’acteur qu’aucune personne n’a été sélectionnée et invite l’acteur et réessayer
+\item L’acteur modifie les droits pour ces personnes
+\item Le système notifie l’acteur que les droits ont bien été modifié
+\item (7bis) Le système notifie l’acteur qu’une erreur s’est produite et renvoie sur l’annuaire
+\item (7bis) Le système notifie l’acteur que ces droits ne peuvent être attribués aux personnes sélectionnées et renvoie sur les personnes sélectionnées
+\item Le système notifie les acteurs concernés que leurs droits ont été modifiés
+\end{enumerate}
+
+
+
+
+ 
+\subsection{Créer un nouveau compte élève}
+Acteurs : administration
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur l’annuaire des élèves et sélectionne l’élève voulu
+\item Le système affiche la fiche détaillée de l’élève
+\item L’acteur choisi “créer un compte”
+\item Le système affiche une fiche avec certaines informations pré remplies (nom, prénom,..)
+\item L’acteur complète la fiche et l’enregistre 
+\item Le système notifie l’acteur que son enregistrement a bien été pris en compte
+\item Le système génère un mot de passe aléatoire que le nouvel utilisateur modifiera à sa première connexion
+\item Le système notifie le nouvel utilisateur de la création de son compte en lui envoyant son mot de passe provisoire par mail
+\item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le laisse sur la fiche détaillée de l’élève
+\end{enumerate}
+
+
+
+
+\subsection{Créer un nouveau compte maître de stage}
+Acteurs : administration
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur l’annuaire
+\item L’acteur choisi “nouvel utilisateur”
+\item Le système renvoie une fiche de modèle entreprise vide à l’acteur 
+\item L’acteur remplit la fiche
+\item (4bis) l’acteur choisi dans un menu un élève 
+\item Le système remplit certaines informations automatiquement grâce à la fiche de l’élève
+\item L’acteur complète la fiche
+\item L’acteur enregistre la fiche
+\item Le système notifie l’acteur que son enregistrement a bien été pris en compte
+\item Le système génère un mot de passe aléatoire que le nouvel utilisateur modifiera à sa première connexion
+\item Le système notifie le nouvel utilisateur de la création de son compte en lui envoyant son mot de passe provisoire par email
+\item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le laisse sur la fiche détaillée de l’entreprise
+\end{enumerate}
+
+
+\subsection{ Lier des utilisateurs}
+Acteurs : administration
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur l’annuaire
+\item Il choisit un élève ou un groupe d’élèves 
+\item Le système affiche la sélection
+\item L’acteur attribue un tuteur académique et un maître d’apprentissage à la sélection
+\item Le système notifie l’acteur que sa modification a bien été prise en compte et effectue l’association des utilisateurs
+\item Le système notifie les acteurs concernés qu’ils sont liés
+\item (5bis) Le système notifie l’acteur qu’une erreur s’est produite 
+\end{enumerate}
+
+
+
+
+\subsection{Gérer le redoublement des élèves}
+Acteurs : scolarité
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur l’annuaire, par défaut tous les élèves passent à l’année supérieure
+\item L’acteur sélectionne un ou plusieurs élèves(s)
+\item L’acteur choisi de leur affecter le statut redoublant
+\item Le système met à jour automatiquement l’année d’étude des redoublants
+\item Le système notifie l’acteur que sa modification a bien été enregistrée 
+\item (5bis) Le système notifie l’acteur qu’une erreur s’est produite
+\end{enumerate}
+
+
+
 
 
 \section{Donn\'ees}
