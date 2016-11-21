@@ -77,20 +77,10 @@
 
 \end{flushright}
 
-
-
-
 \chapter{Introduction}
 
 \section{A propos du document}
 Le présent document vise à spécifier les acteurs, les fonctionnalités et besoins, ainsi que les différents cas d’utilisation relatifs au développement d’une application de gestion des stages pour les élèves de TELECOM Nancy. L’application a pour objectif de simplifier et automatiser la gestion des stages de deuxième (2A) et troisième (3A) année ainsi qu’offrir un suivi statistique.
-
-\section{Document Conventions}
-$<$Describe any standards or typographical conventions that were followed when 
-writing this SRS, such as fonts or highlighting that have special significance.  
-For example, state whether priorities  for higher-level requirements are assumed 
-to be inherited by detailed requirements, or whether every requirement statement 
-is to have its own priority.$>$
 
 \section{Public concerné et vue d’ensemble du produit}
 Ce cahier des charges est à destination de l’administration de l’école qui est commanditaire du projet d’application de gestion des stages. Il vise à mettre en lien les besoins de l’administration et les fonctionnalités à mettre en oeuvre par les développeurs de l’application. 
@@ -313,8 +303,6 @@ Acteurs : Ma\^itres de stage
 \item Le syst\`eme notifie l’acteur que son document a bien \'et\'e enregistr\'e
 \item Le syst\`eme notifie les acteurs concern\'es que le questionnaire a \'et\'e rempli par l’entreprise
 \end{enumerate}
-
-
 \subsection{Noter les rapports et soutenances de stage}
 Acteurs : Tuteurs académiques
 \\
@@ -329,8 +317,6 @@ Acteurs : Tuteurs académiques
 \item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le renvoie sur la fiche de l’étudiant
 \item Le système notifie les acteurs concernés que la note pour un élève a été entrée
 \end{enumerate}
-
-
 \subsection{Signature de la convention}
 Acteurs : directeur d’\'ecole (administration), \'el\`eves, responsables des stages et ma\^itres de stage
 \\
@@ -341,8 +327,6 @@ Acteurs : directeur d’\'ecole (administration), \'el\`eves, responsables des s
 \item L’acteur signe la convention
 \item Le syst\`eme notifie les autres acteurs
 \end{enumerate}
-
-
 \subsection{Accéder à l’annuaire}
 Acteurs : scolarité
 \\
@@ -352,8 +336,6 @@ Acteurs : scolarité
 \item Le système lui renvoie l’annuaire de l’année universitaire en cours
 \item (2bis) Le système notifie l’acteur qu’une erreur s’est produite
 \end{enumerate}
-
-
 \subsection{Gérer le planning}
 Acteurs : scolarité
 \\
@@ -367,8 +349,6 @@ Acteurs : scolarité
 \item (4bis) Le système notifie l’acteur que l’événement n’a pas pu être créé et le renvoie sur le planning
 \item Alternative : (1bis) L’acteur choisit un élève dans l’annuaire puis sélectionne planning (ajout automatique de l’événement à la personne) -> étape 4
 \end{enumerate}
-
-
 \subsection{Etablir les statistiques}
 Acteurs : administration
 \\
@@ -382,10 +362,6 @@ Acteurs : administration
 \item (4bis) Le système notifie qu’une erreur s’est produite à cause du choix des éléments incompatibles et invite l’acteur effectuer une autre opération ou choisir d’autres éléments
 \item (4ter) Le système notifie qu’une erreur inconnue s’est produite et l’invite à réessayer ultérieurement
 \end{enumerate}
-
-
-
- 
 \subsection{Gérer les droits des utilisateurs}
 Acteurs : administration
 \\
@@ -402,11 +378,6 @@ Acteurs : administration
 \item (7bis) Le système notifie l’acteur que ces droits ne peuvent être attribués aux personnes sélectionnées et renvoie sur les personnes sélectionnées
 \item Le système notifie les acteurs concernés que leurs droits ont été modifiés
 \end{enumerate}
-
-
-
-
- 
 \subsection{Créer un nouveau compte élève}
 Acteurs : administration
 \\
@@ -422,10 +393,6 @@ Acteurs : administration
 \item Le système notifie le nouvel utilisateur de la création de son compte en lui envoyant son mot de passe provisoire par mail
 \item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le laisse sur la fiche détaillée de l’élève
 \end{enumerate}
-
-
-
-
 \subsection{Créer un nouveau compte maître de stage}
 Acteurs : administration
 \\
@@ -444,8 +411,6 @@ Acteurs : administration
 \item Le système notifie le nouvel utilisateur de la création de son compte en lui envoyant son mot de passe provisoire par email
 \item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le laisse sur la fiche détaillée de l’entreprise
 \end{enumerate}
-
-
 \subsection{ Lier des utilisateurs}
 Acteurs : administration
 \\
@@ -459,10 +424,6 @@ Acteurs : administration
 \item Le système notifie les acteurs concernés qu’ils sont liés
 \item (5bis) Le système notifie l’acteur qu’une erreur s’est produite 
 \end{enumerate}
-
-
-
-
 \subsection{Gérer le redoublement des élèves}
 Acteurs : scolarité
 \\
@@ -478,12 +439,10 @@ Acteurs : scolarité
 
 
 
-
-
 \section{Donn\'ees}
 \subsection{Mod\`ele de donn\'ees}
 
-\fbox{\centerline{\includegraphics[height=\textheight]{"Stages"}}}
+\fbox{\centerline{\includegraphics[height=0.9\textheight]{"Stages"}}}
 
 \begin{mld}
   Document & (\prim{id\_élève}, \prim{type}, \attr{lien})\\
@@ -658,23 +617,6 @@ Acteurs : scolarité
 \begin{itemize}
 \item Certaines donn\'ees sont automatiquement supprim\'ees apr\`es une p\'eriode donn\'ee sans acc\`es pour ne pas alourdir la base de donn\'ees
 \end{itemize}
-
-
-\section{Appendix A: Glossary}
-%see https://en.wikibooks.org/wiki/LaTeX/Glossary
-$<$Define all the terms necessary to properly interpret the SRS, including 
-acronyms and abbreviations. You may wish to build a separate glossary that spans 
-multiple projects or the entire organization, and just include terms specific to 
-a single project in each SRS.$>$
-
-\section{Appendix B: Analysis Models}
-$<$Optionally, include any pertinent analysis models, such as data flow 
-diagrams, class diagrams, state-transition diagrams, or entity-relationship 
-diagrams.$>$
-
-\section{Appendix C: To Be Determined List}
-$<$Collect a numbered list of the TBD (to be determined) references that remain 
-in the SRS so they can be tracked to closure.$>$
 
 \end{document}
 Contact GitHub API Training Shop Blog About
