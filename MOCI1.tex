@@ -82,11 +82,8 @@
 
 \chapter{Introduction}
 
-\section{Purpose}
-$<$Identify the product whose software requirements are specified in this 
-document, including the revision or release number. Describe the scope of the 
-product that is covered by this SRS, particularly if this SRS describes only 
-part of the system or a single subsystem.$>$
+\section{A propos du document}
+Le présent document vise à spécifier les acteurs, les fonctionnalités et besoins, ainsi que les différents cas d’utilisation relatifs au développement d’une application de gestion des stages pour les élèves de TELECOM Nancy. L’application a pour objectif de simplifier et automatiser la gestion des stages de deuxième (2A) et troisième (3A) année ainsi qu’offrir un suivi statistique.
 
 \section{Document Conventions}
 $<$Describe any standards or typographical conventions that were followed when 
@@ -95,52 +92,39 @@ For example, state whether priorities  for higher-level requirements are assumed
 to be inherited by detailed requirements, or whether every requirement statement 
 is to have its own priority.$>$
 
-\section{Intended Audience and Reading Suggestions}
-$<$Describe the different types of reader that the document is intended for, 
-such as developers, project managers, marketing staff, users, testers, and 
-documentation writers. Describe what the rest of this SRS contains and how it is 
-organized. Suggest a sequence for reading the document, beginning with the 
-overview sections and proceeding through the sections that are most pertinent to 
-each reader type.$>$
+\section{Public concerné et vue d’ensemble du produit}
+Ce cahier des charges est à destination de l’administration de l’école qui est commanditaire du projet d’application de gestion des stages. Il vise à mettre en lien les besoins de l’administration et les fonctionnalités à mettre en oeuvre par les développeurs de l’application. 
 
-\section{Project Scope}
-$<$Provide a short description of the software being specified and its purpose, 
-including relevant benefits, objectives, and goals. Relate the software to 
-corporate goals or business strategies. If a separate vision and scope document 
-is available, refer to it rather than duplicating its contents here.$>$
+\section{ Portée du produit}
+L’application de gestion des stages est à destination de toutes les personnes internes à l’école qui sont amenées à être en lien avec un stage : élèves, enseignants, personnel de la scolarité et administratifs.
+Elle est aussi destinée à être utilisée par les entreprises, à travers les maîtres de stage.
 
-\section{References}
-$<$List any other documents or Web addresses to which this SRS refers. These may 
-include user interface style guides, contracts, standards, system requirements 
-specifications, use case documents, or a vision and scope document. Provide 
-enough information so that the reader could access a copy of each reference, 
-including title, author, version number, date, and source or location.$>$
+
+\section{Outils utilisés}
+Plantuml : Outil utilisé pour la réalisation des diagrammes de séquence : http://plantuml.com/ 
+PlantText : Editeur pour plantuml : https://www.planttext.com/
+Adobe Fireworks : Logiciel utilisé pour la réalisation des interfaces
+Mocodo :  Outil utilisé pour la réalisation du modèle de données : http://mocodo.wingi.net/
+MikTex : Distribution Tex pour windows comprenant l’éditeur texWorks https://miktex.org/
 
 
 \chapter{Vue d'ensemble et fonctionnement g\'en\'eral}
 
 \section{Fonctionnement global}
-$<$Le syst\`eme doit permettre aux utilisateurs d'effectuer diff\'erentes actions relatives \`a la gestion des stages.$>$
+Le système doit permettre le suivi des stages des élèves de l’école, par année universitaire et par promotion. Les utilisateurs en lien avec le stage doivent se connecter et effectuer différentes actions selon des échéances précises. L’objectif principal du système est d’automatiser le traitement de certaines tâches (tel que l’édition de la convention de stage), simplifier la procédure pour chacune des parties et permettre un suivi statistique.
 
 \section{Acteurs}
 \subsection{\'El\`eve}
-$<$
 Il se caract\'erise par : son nom, son pr\'enom, son adresse e-mail, sa date de naissance, son sexe, sa promotion et son approfondissement. Il peut \'editer son adresse et son num\'ero de t\'el\'ephone, via la page “profil”.
-$>$
 
 \subsection{Ma\^itre de stage}
-$<$
 Il se d\'efinit par son nom, son pr\'enom, sa fonction, son t\'el\'ephone, fax et email. Il appartient \`a un service, lui-m\^eme caract\'eris\'e par son nom et son adresse postale, appartenant à l’entreprise définit par son nom, son adresse, son t\'el\'ephone, fax, email, site web,  num\'ero de SIRET, effectif… Ces informations sont fournies par l’\'el\`eve lors de l’\'edition d’une fiche de renseignement ; les acc\`es \`a la plateforme pour le ma\^itre de stage sont eux cr\'ees par l’administration.
-$>$
 
 \subsection{Tuteur acad\'emique}
-$<$
 Il se caract\'erise par son nom, son pr\'enom, son t\'el\'ephone et email ainsi que sa fonction. Il peut \'editer son adresse postale et son num\'ero de t\'el\'ephone.
 Le tuteur acad\'emique peut aussi \^etre directeur ou responsable de stage.
-$>$
 
 \subsection{Scolarit\'e}
-$<$
 Elle est d\'efinit par son nom, son pr\'enom et son adresse email.
 $>$
 
@@ -310,10 +294,10 @@ Acteurs : directeur d’\'ecole (administration), \'el\`eves, responsables des s
 \item L’acteur signe la convention
 \item Le syst\`eme notifie les autres acteurs
 \end{enumerate}
-$>$
+ss
+
 
 \section{Donn\'ees}
-$<$
 \subsection{Mod\`ele de donn\'ees}
 
 \fbox{\centerline{\includegraphics[height=\textheight]{"Stages"}}}
@@ -331,7 +315,7 @@ $<$
   Entreprise & (\prim{nom}, \prim{add}, \attr{cp}, \attr{ville}, \attr{pays}, \attr{effectif}, \attr{activité}, \attr{ape}, \attr{tel fax}, \attr{mail}, \attr{web}, \attr{siret}, \foreign{nom\_service}, \foreign{nom\_encadrant})\\
 \end{mld}
 
-\clearpage
+\newpage
 \section{Interfaces utilisateurs}
 
 \subsection{\'El\`eves}
