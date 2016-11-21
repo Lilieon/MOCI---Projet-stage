@@ -62,20 +62,20 @@
     \begin{bfseries}
         \Huge{CAHIER DES\\ CHARGES}\\
         \vspace{1.9cm}
-        for\\
-        \vspace{1.9cm}
         Application de gestion des stages\\
         \vspace{1.9cm}
         \LARGE{Version \myversion approved}\\
         \vspace{1.9cm}
-        Réalisé par $<$author$>$\\
+        Réalisé par Emeline Bergiste, Lilan Le mee, Quentin Malraison, Capucine Blanchard\\
         \vspace{1.9cm}
-        $<$Telecom Nancy$>$\\
-        \vspace{1.9cm}
+        Telecom Nancy\\
+        \vspace{2.9cm}
         \today\\
     \end{bfseries}
 
 \end{flushright}
+
+\tableofcontents
 
 \chapter{Introduction}
 
@@ -195,7 +195,7 @@ Système :
 \item le syst\`eme notifie automatiquement les utilisateurs lorsqu’une action requiert leur attention
 le syst\`eme valide automatiquement les stages des \'el\`eves selon leurs notes (de stage,de rapport et de soutenance) et le barème
 \end{itemize}
-
+\chapter{Besoins spécifiques}
 \section{Sp\'ecifications}
 \subsection{Se connecter}
 Acteurs : Tous 
@@ -585,8 +585,8 @@ Acteurs : scolarité
 
 \fbox{\includegraphics[width=\textwidth]{"diagActi"}}
 
-\section{Besoins non fonctionnels}
-\subsection{Li\'es \`a la s\'ecurit\'e}
+\chapter{Besoins non fonctionnels}
+\section{Li\'es \`a la s\'ecurit\'e}
 \begin{itemize}
 \item Les \'el\`eves ne doivent en aucun cas avoir acc\`es aux donn\'ees des autres \'el\`eves.
 \item Les donn\'ees doivent \^etre sauvegard\'ees tous les soirs.
@@ -596,20 +596,20 @@ Acteurs : scolarité
 \item Les rapports de stage confidentiels ne doivent pas \^etre accessibles
 \end{itemize}
 
-\subsection{Li\'es aux \'ev\`enements}
+\section{Li\'es aux \'ev\`enements}
 \begin{itemize}
 \item Les \'el\'ements dont l’\'ech\'eance est pass\'ee ne doivent plus \^etre modifiables
 \item Toutes les notifications apparaissent sur le compte de l’utilisateur et sont automatiquement envoy\'ees par email
 \end{itemize}
 
-\subsection{Li\'es aux utilisateurs}
+\section{Li\'es aux utilisateurs}
 \begin{itemize}
 \item Par d\'efaut, tous les utilisateurs passent \`a l’ann\'ee sup\'erieure s’ils sont en 2A
 \item apr\`es deux ans d’inactivit\'e, les comptes utilisateurs sont automatiquement supprim\'es
 \end{itemize}
 
 \newpage
-\subsection{Li\'es aux documents}
+\section{Li\'es aux documents}
 \begin{itemize}
 \item la partie 2 de la fiche de renseignement ne doit pouvoir \^etre compl\'et\'ee que si la partie 1 correspondante a \'et\'e remplie en int\'egralit\'e et valid\'ee num\'eriquement par le responsable des stages de l’ann\'ee concern\'ee
 \item lorsque l’\'el\`eve compl\`ete la partie 1 de la fiche de renseignement, le formulaire lui propose de remplir automatiquement l’adresse du lieu du stage si celui-ci correspond au lieu du stage. Sinon, les champs lui sont fournis pour entrer l’adresse manuellement
@@ -617,7 +617,7 @@ Acteurs : scolarité
 \item avant d’ajouter le rapport de stage, lorsque l’\'el\`eve est en 3A, l’attestation de non plagiat doit avoir \'et\'e d\'epos\'ee dans les documents administratifs
 \end{itemize}
  
-\subsection{Li\'es aux performances}
+\section{Li\'es aux performances}
 \begin{itemize}
 \item Certaines donn\'ees sont automatiquement supprim\'ees apr\`es une p\'eriode donn\'ee sans acc\`es pour ne pas alourdir la base de donn\'ees
 \end{itemize}
