@@ -1,0 +1,48 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Purpose}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Document Conventions}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Intended Audience and Reading Suggestions}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Project Scope}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{References}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Vue d'ensemble et fonctionnement g\351n\351ral}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Fonctionnement global}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Acteurs}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{\311l\350ve}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Ma\356tre de stage}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Tuteur acad\351mique}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.4}{Scolarit\351}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.5}{Administration}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Fonctionnalit\351s}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.3.1}{Gestion des utilisateurs}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.2}{Gestion des documents}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.3}{Gestion des \351v\350nements}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{Sp\351cifications}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Se connecter}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.2}{G\351rer ses informations personnelles}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.3}{Acc\351der \340 la fiche de suivi}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.4}{D\351p\364t d'un document relatif au stage}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.5}{Acc\351der \340 un document relatif au stage}{section.2.4}% 24
+\BOOKMARK [2][-]{subsection.2.4.6}{Remplir le questionnaire d\220\351valuation du stage}{section.2.4}% 25
+\BOOKMARK [2][-]{subsection.2.4.7}{Noter les rapports et soutenances de stage}{section.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.4.8}{Signature de la convention}{section.2.4}% 27
+\BOOKMARK [1][-]{section.2.5}{Donn\351es}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.5.1}{Mod\350le de donn\351es}{section.2.5}% 29
+\BOOKMARK [2][-]{subsection.2.5.2}{Dictionnaire de donn\351es}{section.2.5}% 30
+\BOOKMARK [1][-]{section.2.6}{Interfaces utilisateurs}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.6.1}{\311l\350ves}{section.2.6}% 32
+\BOOKMARK [2][-]{subsection.2.6.2}{Scolarit\351}{section.2.6}% 33
+\BOOKMARK [1][-]{section.2.7}{Diagrammes de s\351quence}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.7.1}{Pour les \351l\350ves}{section.2.7}% 35
+\BOOKMARK [2][-]{subsection.2.7.2}{Pour la scolarit\351}{section.2.7}% 36
+\BOOKMARK [2][-]{subsection.2.7.3}{Pour l'entreprise}{section.2.7}% 37
+\BOOKMARK [2][-]{subsection.2.7.4}{Pour l'administration}{section.2.7}% 38
+\BOOKMARK [2][-]{subsection.2.7.5}{Pour l'enseignant}{section.2.7}% 39
+\BOOKMARK [1][-]{section.2.8}{Besoins non fonctionnels}{chapter.2}% 40
+\BOOKMARK [2][-]{subsection.2.8.1}{Li\351s \340 la s\351curit\351}{section.2.8}% 41
+\BOOKMARK [2][-]{subsection.2.8.2}{Li\351s aux \351v\350nements}{section.2.8}% 42
+\BOOKMARK [2][-]{subsection.2.8.3}{Li\351s aux utilisateurs}{section.2.8}% 43
+\BOOKMARK [2][-]{subsection.2.8.4}{Li\351s aux documents}{section.2.8}% 44
+\BOOKMARK [2][-]{subsection.2.8.5}{Li\351s aux performances}{section.2.8}% 45
+\BOOKMARK [1][-]{section.2.9}{Appendix A: Glossary}{chapter.2}% 46
+\BOOKMARK [1][-]{section.2.10}{Appendix B: Analysis Models}{chapter.2}% 47
+\BOOKMARK [1][-]{section.2.11}{Appendix C: To Be Determined List}{chapter.2}% 48
