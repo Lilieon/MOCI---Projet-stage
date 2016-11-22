@@ -41,6 +41,14 @@
 %}
 \usepackage{hyperref}
 \usepackage{graphicx}
+
+%Package pour la mise en forme du titre
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+%Pour les tableaux
+\usepackage{array}
+
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
 \graphicspath{{Diagramme/ADMIN/} {Diagramme/ELEVE/} {Diagramme/ENSEIGNANT/} {Diagramme/ENTREPRISE/} {Diagramme/SCOLARITE/} }
 
@@ -621,6 +629,204 @@ Acteurs : scolarité
 \begin{itemize}
 \item Certaines donn\'ees sont automatiquement supprim\'ees apr\`es une p\'eriode donn\'ee sans acc\`es pour ne pas alourdir la base de donn\'ees
 \end{itemize}
+
+%Changement du format des titres de chapitre et section
+\titleformat{\chapter} [display]
+	{\centering\normalfont\huge\bfseries}
+  {\thechapter}
+  {20pt}
+  {\Huge}
+	
+\titleformat{\section} [display]
+	{\centering\normalfont\huge}
+  {\thesection}
+  {18pt}
+  {\Huge}
+
+\chapter*{Annexe A}
+\section*{Dictionnaire de données}
+
+\begin{flushleft}
+\textbf{\'El\`eve}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+id\_\'el\`eve & Num\`ero identifiant de l’\`etudiant & Num\`erique & Cl\`e primaire,\\
+&&& incr\`emental \\
+nom & Nom de l'\`etudiant & Alphanum\`erique & \\
+pr\`enom & Pr\`enom de l'\`etudiant & Alphanum\`erique & \\
+mdp & Mot de passe & Alphanum\`erique & \\
+ann\`ee & Ann\`ee universitaire & Date & \\
+promo & 2A ou 3A & Alphanum\`erique & \\
+mail & Adresse email & Alphanum\`erique & \\
+date\_naissance & Date de naissance & Date & \\
+sexe & & Alphanum\`erique & \\
+approfondissement & Approfondissement de l'\`etudiant & Alphanum\`erique & \\
+tel & Num\`ero de t\`el\`ephone & Alphanum\`erique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Document}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+id\_\'el\'eve & Num\'ero identifiant de l’\'etudiant & Num\'erique & Cl\'e primaire,\\
+&&& cl\'e \'etrang\'ere \\
+type & Type de document & Alphanum\'erique & Cl\'e primaire \\
+lien & Lien vers le document & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\newpage
+\begin{flushleft}
+\textbf{Entreprise}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom & Nom de l'entreprise & Alphanum\'erique & Cl\'e primaire \\
+add & Adresse du si\'ege social l’entreprise & Alphanum\'erique & Cl\'e primaire \\
+cp & Code postal & Num\'erique & \\
+ville & Ville & Alphanum\'erique & \\
+pays & Pays & Alphanum\'erique & \\
+effectif & Effectif de l'entreprise & Num\'erique & \\
+activit\'e & Activit\'e principale de l'entreprise & \\
+ape & Code APE & Alphanum\'erique & \\
+tel &  Num\'ero de t\'el\'ephone de l'entreprise & Alphanum\'erique & \\
+fax & Fax de l'entreprise & Alphanum\'erique & \\
+mail & Adresse email de l'entrerpise & Alphanum\'erique & \\
+web & Adresse du site web de l'entreprise & Alphanum\'erique & \\
+siret & Num\'ero de SIRET & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Service}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom\_service & Nom du service & Alphanum\'erique & Cl\'e primaire \\
+nom\_encadrant & Nom de l'encadrant & Alphanum\'erique & Cl\'e primaire \\
+pr\'enom & Pr\'enom de l'encadrant & Alphanum\'erique & \\
+mdp & Mot de passe & Alphanum\'erique & \\
+fonction & Fonction de l'encadrant dans le service & Alphanum\'erique & \\
+tel & Num\'ero de t\'el\'ephone de l'encadrant & Alphanum\'erique & \\
+fax & Fax de l'encadrant & Alphanum\'erique & \\
+mail & Adresse email de l'encadrant & Alphanum\'erique \\
+\hline
+\end{tabular}
+
+\newpage
+\begin{flushleft}
+\textbf{Stage}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+titre & Titre du stage & Alphanum\'erique & Cl\'e primaire \\
+date\_deb & Date de d\'ebut du stage & Alphanum\'erique & \\
+date\_fin & Date de fin du stage & Alphanum\'erique & \\
+mission & Descriptif du travail demand\'e au stagiaire & Alphanum\'erique & \\
+mat\'eriel & Type du mat\'eriel & Alphanum\'erique & \\
+logiciels & Logiciel(s) utilis\'e(s) & Alphanum\'erique & \\
+langage & Langage(s) de programmation utilis\'e(s) & Alphanum\'erique & \\
+gratification & Montant de la gratification & Alphanum\'erique & \\
+type\_gratification & Type : brut ou net & Alphanum\'erique & \\
+modalit\'e & Modalit\'e de versement de la gratification & Alphanum\'erique & \\
+horaires & Dur\'ee hebdomadaire maximal de pr\'esence de l'\'etudiant & Num\'erique & \\
+cond_horaires & Conditions particuli\'eres du temps de travail (nuit, dimanche, ...) & Alphanum\'erique & \\
+temps_stage & Temps complet ou partiel & Alphanum\'erique & \\
+quotit\'e & Si temps partiel, sp\'ecification de la quotit\'e & Alphanum\'erique & \\
+avantages & Liste de savantages accord\'ees à l'\'etudiants & Alphanum\'erique & \\
+protection\_maladie & Fournie ou non par l'entreprise & Alphanum\'erique & \\
+cong\'es & Modalit\'e des jours de cong\'es accord\'e ou non à l'\'etudiant & Alphanum\'erique \\
+validation & Modalit\'e de validation & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Signataire (Ressources humaines)}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+id\_signataire & Num\'ero identifiant du signataire & Alphanum\'erique & Cl\'e primaire,\\
+&&& incr\'emental \\
+nom & Nom du signataire de la convention & Alphanum\'erique & \\
+pr\'enom & Pr\'enom du signataire & Alphanum\'erique & \\
+fonction & Fonction du signataire & Alphanum\'erique & \\
+service & Nom du service d'appartenance & Alphanum\'erique & \\
+mail & Adresse email du signataire & Alphanum\'erique & \\
+tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
+add_envoi & Destination choisi pour l'envoi des documents (2 choix possibles) & Num\'erique &\\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Scolarit\'e}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom & Nom de la personne charg\'e de la gestion du stage de l'\'etudiant & Alphanum\'erique & Cl\'e primaire & \\
+pr\'enom & & Alphanum\'erique & Cl\'e primaire \\
+mail & Adresse email & Alphanum\'erique & \\
+mdp & Mot de passe & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\newpage
+\begin{flushleft}
+\textbf{Tuteur}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom & Nom du tuteur (acad\'emique) & Alphanum\'erique & Cl\'e primaire \\
+pr\'enom & Pr\'enom du tuteur & Alphanum\'erique & Cl\'e primaire \\
+mdp & Mot de passe & Alphanum\'erique & \\
+mail & Adresse email & Alphanum\'erique & \\
+tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
+adresse & & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Administration}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom & & Alphanum\'erique & Cl\'e primaire \\
+pr\'enom & & Alphanum\'erique & Cl\'e primaire \\
+mdp & Mot de passe & Alphanum\'erique & \\
+fonction & Fonction au sein de l'administration & Alphanum\'erique & \\
+tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
+mail & Adresse email univesit\'e de lorraine & Alphanum\'erique & \\
+\hline
+\end{tabular}
 
 \end{document}
 Contact GitHub API Training Shop Blog About
