@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %Copyright 2014 Jean-Philippe Eisenbarth
 %This program is free software: you can 
 %redistribute it and/or modify it under the terms of the GNU General Public 
@@ -830,4 +831,840 @@ mail & Adresse email université de lorraine & Alphanumérique & \\
 
 \end{document}
 Contact GitHub API Training Shop Blog About
+=======
+%Copyright 2014 Jean-Philippe Eisenbarth
+%This program is free software: you can 
+%redistribute it and/or modify it under the terms of the GNU General Public 
+%License as published by the Free Software Foundation, either version 3 of the 
+%License, or (at your option) any later version.
+%This program is distributed in the hope that it will be useful,but WITHOUT ANY 
+%WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
+%PARTICULAR PURPOSE. See the GNU General Public License for more details.
+%You should have received a copy of the GNU General Public License along with 
+%this program.  If not, see <http://www.gnu.org/licenses/>.
+
+%Based on the code of Yiannis Lazarides
+%http://tex.stackexchange.com/questions/42602/software-requirements-specification-with-latex
+%http://tex.stackexchange.com/users/963/yiannis-lazarides
+%Also based on the template of Karl E. Wiegers
+%http://www.se.rit.edu/~emad/teaching/slides/srs_template_sep14.pdf
+%http://karlwiegers.com
+\documentclass{scrreprt}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\hypersetup{
+    bookmarks=false,    % show bookmarks bar?
+    pdftitle={Cahier des charges : Application de gestion des stages},    % title
+    pdfauthor={Emeline Bergiste, Lilan Le mee, Quentin Malraison, Capucine Blanchard},                     % author
+    pdfsubject={TeX and LaTeX},                        % subject of the document
+    pdfkeywords={TeX, LaTeX, graphics, images}, % list of keywords
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,       % color of internal links
+    citecolor=black,       % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=purple,        % color of external links
+    linktoc=page            % only page is linked
+}%
+\def\myversion{1.0 }
+\date{}
+%\title{%
+
+%}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+%Package pour la mise en forme du titre
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+%Pour les tableaux
+\usepackage{array}
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+\graphicspath{{Diagramme/ADMIN/} {Diagramme/ELEVE/} {Diagramme/ENSEIGNANT/} {Diagramme/ENTREPRISE/} {Diagramme/SCOLARITE/} }
+
+
+\usepackage[normalem]{ulem}
+\newenvironment{mld}
+  {\par\begin{minipage}{\linewidth}\begin{tabular}{rp{0.7\linewidth}}}
+  {\end{tabular}\end{minipage}\par}
+\newcommand{\relat}[1]{\textsc{#1}}
+\newcommand{\attr}[1]{\emph{#1}}
+\newcommand{\prim}[1]{\uline{#1}}
+\newcommand{\foreign}[1]{\#\textsl{#1}}
+
+\begin{document}
+
+\begin{flushright}
+    \rule{16cm}{5pt}\vskip1cm
+	\centering
+    \begin{bfseries}
+        \Huge{CAHIER DES\\ CHARGES}\\
+        \vspace{1.9cm}
+        Application de gestion des stages\\
+        \vspace{1.9cm}
+        \LARGE{Version \myversion approved}\\
+        \vspace{1.9cm}
+        Réalisé par Emeline Bergiste, Lilan Le mee, Quentin Malraison, Capucine Blanchard\\
+        \vspace{1.9cm}
+        Telecom Nancy\\
+        \vspace{2.9cm}
+        \today\\
+    \end{bfseries}
+
+\end{flushright}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\section{A propos du document}
+Le présent document vise à spécifier les acteurs, les fonctionnalités et besoins, ainsi que les différents cas d’utilisation relatifs au développement d’une application de gestion des stages pour les élèves de TELECOM Nancy. L’application a pour objectif de simplifier et automatiser la gestion des stages de deuxième (2A) et troisième (3A) année ainsi qu’offrir un suivi statistique.
+
+\section{Public concerné et vue d’ensemble du produit}
+Ce cahier des charges est à destination de l’administration de l’école qui est commanditaire du projet d’application de gestion des stages. Il vise à mettre en lien les besoins de l’administration et les fonctionnalités à mettre en oeuvre par les développeurs de l’application. 
+
+\section{ Portée du produit}
+L’application de gestion des stages est à destination de toutes les personnes internes à l’école qui sont amenées à être en lien avec un stage : élèves, enseignants, personnel de la scolarité et administratifs.
+Elle est aussi destinée à être utilisée par les entreprises, à travers les maîtres de stage.
+
+
+\section{Outils utilisés}
+\begin{itemize}
+\item Plantuml : Outil utilisé pour la réalisation des diagrammes de séquence : http://plantuml.com/ 
+\item PlantText : Editeur pour plantuml : https://www.planttext.com/
+\item Adobe Fireworks : Logiciel utilisé pour la réalisation des interfaces
+\item Mocodo :  Outil utilisé pour la réalisation du modèle de données : http://mocodo.wingi.net/
+\item MikTex : Distribution Tex pour windows comprenant l’éditeur texWorks https://miktex.org/
+\end{itemize}
+
+\chapter{Vue d'ensemble et fonctionnement g\'en\'eral}
+
+\section{Fonctionnement global}
+Le système doit permettre le suivi des stages des élèves de l’école, par année universitaire et par promotion. Les utilisateurs en lien avec le stage doivent se connecter et effectuer différentes actions selon des échéances précises. L’objectif principal du système est d’automatiser le traitement de certaines tâches (tel que l’édition de la convention de stage), simplifier la procédure pour chacune des parties et permettre un suivi statistique.
+
+\section{Acteurs}
+\subsection{\'El\`eve}
+Il se caract\'erise par : son nom, son pr\'enom, son adresse e-mail, sa date de naissance, son sexe, sa promotion et son approfondissement. Il peut \'editer son adresse et son num\'ero de t\'el\'ephone, via la page “profil”.
+
+\subsection{Ma\^itre de stage}
+Il se d\'efinit par son nom, son pr\'enom, sa fonction, son t\'el\'ephone, fax et email. Il appartient \`a un service, lui-m\^eme caract\'eris\'e par son nom et son adresse postale, appartenant à l’entreprise définit par son nom, son adresse, son t\'el\'ephone, fax, email, site web,  num\'ero de SIRET, effectif… Ces informations sont fournies par l’\'el\`eve lors de l’\'edition d’une fiche de renseignement ; les acc\`es \`a la plateforme pour le ma\^itre de stage sont eux cr\'ees par l’administration.
+
+\subsection{Tuteur acad\'emique}
+Il se caract\'erise par son nom, son pr\'enom, son t\'el\'ephone et email ainsi que sa fonction. Il peut \'editer son adresse postale et son num\'ero de t\'el\'ephone.
+Le tuteur acad\'emique peut aussi \^etre directeur ou responsable de stage.
+
+\newpage
+\subsection{Scolarit\'e}
+Elle est d\'efinit par son nom, son pr\'enom et son adresse email.
+
+\subsection{Administration}
+Compte super utilisateur, il distingue les responsables de stage et le directeur qui peuvent se connecter aussi en tant que tuteur acad\'emique.
+
+\section{Fonctionnalit\'es}
+Le syst\`eme doit permettre aux utilisateurs d’effectuer diff\'erentes actions relatives \'a la gestion des stages.
+\subsection{Gestion des utilisateurs}
+Tous les utilisateurs :
+\begin{itemize}
+\item tous les utilisateurs se connectent \`a leur espace avec les identifiants qui leur ont \'et\'e fournis
+\item tous les utilisateurs acc\`edent et \'editent leurs informations personnelles de contact (adresse, t\'el\'ephone…)
+\end{itemize}
+Scolarit\'e :
+\begin{itemize}
+\item la scolarit\'e g\`ere les \'el\`eves redoublants
+\item la scolarit\'e acc\`ede aux listes des entreprises et des \'el`eves
+\end{itemize}
+Administration : 
+\begin{itemize}
+\item l’administration g\`ere les utilisateurs et leurs droits
+\item l’administration attribue tuteur et ma\^itre de stage \`a un \'el\`eve
+\item l’administration acc\`ede aux statistiques du syst\`eme
+\end{itemize}
+
+\newpage
+\subsection{Gestion des documents}
+Tous les utilisateurs : 
+\begin{itemize}
+\item tous les utilisateurs, hormis les ma\^itres de stage, acc\`edent \`a la fiche de suivi des stages
+\item tous les utilisateurs acc\`edent aux documents auxquels ils sont attach\'es et peuvent les t\'el\'echarger
+\item \'el\`eves, directeur d’\'ecole, ma\^itres de stage et responsables des stages signent \'electroniquement les conventions auxquelles ils sont li\'es
+\end{itemize}
+\'El\`eves :
+\begin{itemize}
+\item les \'el\`eves d\'eposent et t\'el\'echargent leurs rapports de stage et documents administratifs (attestation de non plagiat, assurance, s\'ecurit\'e sociale)
+\item les \'el\`eves peuvent r\'ecup\'erer le template \`a leur disposition pour le rapport de stage
+\item les \'el\`eves ont la possibilit\'e d’attribuer le statut confidentiel \`a leur rapport de stage
+\item les \'el\`eves remplissent en ligne les informations n\'ecessaires pour leur(s) fiche(s) de renseignement :
+\begin{itemize}
+\item ils peuvent remplir plusieurs premi\`eres parties “Renseignements n\'ecessaires pour valider le stage”
+\item dès lors qu’au moins l’une d’entre elles a \'et\'e valid\'ee, ils peuvent ensuite remplir la seconde partie associée “Renseignements complémentaires pour éditer la convention” de l’entreprise dans laquelle ils veulent effectuer leur stage
+\end{itemize}
+\end{itemize}
+Responsables des stages :  
+\begin{itemize}
+\item les responsables des stages valident les fiches de renseignement
+\end{itemize}
+Ma\^itres des stages : 
+\begin{itemize}
+\item les ma\^itres de stage remplissent l’\'evaluation de stage de l’\'el\`eve et attribuent une note
+\item les ma\^itres de stages valident le rapport d\'epos\'e par l’\'el\`eve
+\end{itemize}
+Tuteurs acad\'emique
+\begin{itemize}
+\item les tuteurs acad\'emiques notent les rapports et soutenances de leurs \'el\`eves
+\end{itemize}
+Syst\`eme :
+\begin{itemize}
+\item le syst\`eme \'edite automatiquement la convention de stage lorsque l’\'el\`eve a compl\'et\'e la partie 2 d’une fiche de renseignement valid\'ee
+\end{itemize}
+
+\subsection{Gestion des \'ev\`enements}
+Scolarit\'e :
+\begin{itemize}
+\item la scolarit\'e \'etablit les plannings des dates cl\'es de stage (dates limites de d\'ep\^ot, planning des soutenances…)
+\end{itemize}
+
+Elèves :
+\begin{itemize}
+\item les \'el\`eves, tuteurs acad\'emiques et ma\^itres de stage doivent respecter les \'ech\'eances de d\'ep\^ot de document ou de validation
+\end{itemize}
+
+
+Système :
+\begin{itemize}
+\item le syst\`eme notifie automatiquement les utilisateurs lorsqu’une action requiert leur attention
+le syst\`eme valide automatiquement les stages des \'el\`eves selon leurs notes (de stage,de rapport et de soutenance) et le barème
+\end{itemize}
+\chapter{Besoins spécifiques}
+\section{Sp\'ecifications}
+\subsection{Se connecter}
+Acteurs : Tous 
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur entre son adresse email et son mot de passe de l’universit\'e puis valide
+\item Le syst\`eme v\'erifie les informations et notifie l’acteur qu’il est bien connect\'e
+\end{enumerate} 
+Alternative : 
+\begin{enumerate}
+\item L’acteur entre son adresse mail et mot de passe de l’universit\'e puis valide
+\item Le syst\`eme v\'erifie les informations et notifie l’acteur que ses informations sont erron\'ees. Il invite l’utilisateur \`a essayer \`a nouveau
+\end{enumerate}
+\subsection{Gérer ses informations personnelles}
+Acteurs : Tous 
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur se rend sur son compte
+\item Le syst\`eme affiche le compte de l’utilisateur 
+\item L’acteur modifie ses informations \'editables
+\item Le syst\`eme notifie \`a l’acteur que ses modifications ont bien \'et\'e enregistr\'ees
+\item (4bis) Le système notifie l’acteur qu’une erreur s’est produite et que ses modifications n’ont pas été prise en compte
+\end{enumerate}
+\subsection{Acc\'eder \`a la fiche de suivi}
+Acteurs : Tous sauf Ma\^itres de stage
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur acc\`ede \`a la page de la fiche de suivi
+\item Le syst\`eme renvoie les informations sous forme de tableau et un lien pour les t\'el\'echarger
+\item L’acteur t\'el\'echarge le document
+\end{enumerate}
+\subsection{D\'ep\^ot d'un document relatif au stage}
+Acteurs : \'El\`eves 
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur acc\`ede \`a la page relative au document
+\item Le syst\`eme affiche la page demand\'ee
+\item L’acteur t\'el\'echarge le document sur le site
+\item Le syst\`eme notifie l’acteur que l’op\'eration s’est bien d\'eroul\'ee 
+\item (4bis) Le syst\`eme notifie l’acteur que son document n’est pas valide et lui propose de r\'eessayer
+\item Le syst\`eme envoie une notification aux acteurs concern\'es qu’un document a \'et\'e d\'epos\'e
+\end{enumerate}
+\subsection{Acc\'eder \`a un document relatif au stage}
+Acteurs :
+\begin{itemize}
+\item tous les utilisateurs en lien avec le stage
+\item \'el\`eves, responsables des stages et scolarit\'e pour les documents administratifs
+\end{itemize}
+\'Etapes :
+\begin{enumerate}
+\item L’acteur demande le document
+\item Le syst\`eme renvoie le document
+\item L’acteur t\'el\'echarge/imprime le document
+\end{enumerate}
+
+
+\subsection{Rendre le rapport confidentiel}
+Acteurs : élèves
+\\
+\'Etapes : 
+\begin{enumerate}
+\item l’acteur se rend sur la page du rapport de stage et coche “confidentiel”
+\item Le système demande confirmation à l’acteur en l’informant des conséquences
+\item L’acteur confirme 
+\item Le système notifie l’acteur que sa demande a bien été prise en compte
+\item Le système notifie les acteurs concernés de la modification
+\item Le système ajoute le filigrane “confidentiel” 
+\item (4bis) Le système notifie l’acteur qu’une erreur s’est produite 
+\end{enumerate}
+
+
+\subsection{Valider la fiche de renseignement et le rapport de stage}
+Acteurs :
+\begin{itemize}
+\item responsables des stages pour la fiche de renseignement
+\item maîtres de stages pour le rapport
+\end{itemize}
+
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur se rend sur la page du document
+\item Le système affiche la page
+\item L’acteur valide le document
+\item Le système notifie l’acteur que sa validation a bien été enregistrée
+\item (4bis) Le système notifie l’acteur qu’une erreur s’est produite et l’invite à réessayer ultérieurement
+\item Le système notifie les acteurs concernés que la fiche de renseignement/le rapport a été validé
+\end{enumerate}
+
+\newpage
+\subsection{Remplir le questionnaire d’\'evaluation du stage}
+Acteurs : Ma\^itres de stage 
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur acc\`ede \`a l’annuaire des \'el\`eves pour lesquels il est le ma\^itre de stage
+\item Le syst\`eme affiche les \'el\`eves concern\'es
+\item L’acteur s\'electionne un \'el\`eve
+\item Le syst\`eme affiche la fiche d\'etaill\'ee de l’\'el\`eve
+\item L’acteur acc\`ede au questionnaire 
+\item L’acteur rempli le questionnaire 
+\item L’acteur valide le questionnaire
+\item (7bis) L’acteur enregistre le questionnaire sans l’avoir termin\'e
+\item Le syst\`eme notifie l’acteur que son document a bien \'et\'e enregistr\'e
+\item Le syst\`eme notifie les acteurs concern\'es que le questionnaire a \'et\'e rempli par l’entreprise
+\end{enumerate}
+\subsection{Noter les rapports et soutenances de stage}
+Acteurs : Tuteurs académiques
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur accède à l’annuaire des élèves pour lesquels il est le tuteur
+\item Le système affiche les élèves
+\item L’acteur sélectionne un élève
+\item Le système affiche la fiche détaillée de l’élève
+\item L’acteur note l’élève
+\item Le système notifie l’acteur que sa note a bien été prise en compte
+\item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le renvoie sur la fiche de l’étudiant
+\item Le système notifie les acteurs concernés que la note pour un élève a été entrée
+\end{enumerate}
+\subsection{Signature de la convention}
+Acteurs : directeur d’\'ecole (administration), \'el\`eves, responsables des stages et ma\^itres de stage
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur demande la convention 
+\item Le syst\`eme renvoie la convention
+\item L’acteur signe la convention
+\item Le syst\`eme notifie les autres acteurs
+\end{enumerate}
+\subsection{Accéder à l’annuaire}
+Acteurs : scolarité
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur va sur la page de l’annuaire
+\item Le système lui renvoie l’annuaire de l’année universitaire en cours
+\item (2bis) Le système notifie l’acteur qu’une erreur s’est produite
+\end{enumerate}
+\subsection{Gérer le planning}
+Acteurs : scolarité
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur accède au planning
+\item Le système lui renvoie le planning
+\item L’acteur ajoute un événement avec des personnes et un lieu (le lieu n’est alors plus disponible pour ce créneau) 
+\item Le système notifie l’acteur que son événement a bien été ajouté
+\item Le système notifie les acteurs concernés de l’ajout de l’événement
+\item (4bis) Le système notifie l’acteur que l’événement n’a pas pu être créé et le renvoie sur le planning
+\item Alternative : (1bis) L’acteur choisit un élève dans l’annuaire puis sélectionne planning (ajout automatique de l’événement à la personne) -> étape 4
+\end{enumerate}
+\subsection{Etablir les statistiques}
+Acteurs : administration
+\\
+\'Etapes : 
+\begin{enumerate}
+\item L’acteur accède à la page
+\item Le système lui renvoie la page
+\item L’acteur choisit les éléments sur lesquels il souhaite afficher les statistiques
+\item Le système affiche les éléments sur la durée définie
+\item L’acteur peut télécharger ces résultats
+\item (4bis) Le système notifie qu’une erreur s’est produite à cause du choix des éléments incompatibles et invite l’acteur effectuer une autre opération ou choisir d’autres éléments
+\item (4ter) Le système notifie qu’une erreur inconnue s’est produite et l’invite à réessayer ultérieurement
+\end{enumerate}
+\subsection{Gérer les droits des utilisateurs}
+Acteurs : administration
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur un annuaire de l’ensemble des usagers
+\item Le système affiche l’ensemble des utilisateurs avec quelques informations
+\item L’acteur sélectionne une personne ou un groupe de personne
+\item Le système affiche ces personnes
+\item (4bis) Le système notifie l’acteur qu’aucune personne n’a été sélectionnée et invite l’acteur et réessayer
+\item L’acteur modifie les droits pour ces personnes
+\item Le système notifie l’acteur que les droits ont bien été modifié
+\item (7bis) Le système notifie l’acteur qu’une erreur s’est produite et renvoie sur l’annuaire
+\item (7bis) Le système notifie l’acteur que ces droits ne peuvent être attribués aux personnes sélectionnées et renvoie sur les personnes sélectionnées
+\item Le système notifie les acteurs concernés que leurs droits ont été modifiés
+\end{enumerate}
+\subsection{Créer un nouveau compte élève}
+Acteurs : administration
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur l’annuaire des élèves et sélectionne l’élève voulu
+\item Le système affiche la fiche détaillée de l’élève
+\item L’acteur choisi “créer un compte”
+\item Le système affiche une fiche avec certaines informations pré remplies (nom, prénom,..)
+\item L’acteur complète la fiche et l’enregistre 
+\item Le système notifie l’acteur que son enregistrement a bien été pris en compte
+\item Le système génère un mot de passe aléatoire que le nouvel utilisateur modifiera à sa première connexion
+\item Le système notifie le nouvel utilisateur de la création de son compte en lui envoyant son mot de passe provisoire par mail
+\item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le laisse sur la fiche détaillée de l’élève
+\end{enumerate}
+\newpage
+\subsection{Créer un nouveau compte maître de stage}
+Acteurs : administration
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur l’annuaire
+\item L’acteur choisi “nouvel utilisateur”
+\item Le système renvoie une fiche de modèle entreprise vide à l’acteur 
+\item L’acteur remplit la fiche
+\item (4bis) l’acteur choisi dans un menu un élève 
+\item Le système remplit certaines informations automatiquement grâce à la fiche de l’élève
+\item L’acteur complète la fiche
+\item L’acteur enregistre la fiche
+\item Le système notifie l’acteur que son enregistrement a bien été pris en compte
+\item Le système génère un mot de passe aléatoire que le nouvel utilisateur modifiera à sa première connexion
+\item Le système notifie le nouvel utilisateur de la création de son compte en lui envoyant son mot de passe provisoire par email
+\item (6bis) Le système notifie l’acteur qu’une erreur s’est produite et le laisse sur la fiche détaillée de l’entreprise
+\end{enumerate}
+\subsection{ Lier des utilisateurs}
+Acteurs : administration
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur l’annuaire
+\item Il choisit un élève ou un groupe d’élèves 
+\item Le système affiche la sélection
+\item L’acteur attribue un tuteur académique et un maître d’apprentissage à la sélection
+\item Le système notifie l’acteur que sa modification a bien été prise en compte et effectue l’association des utilisateurs
+\item Le système notifie les acteurs concernés qu’ils sont liés
+\item (5bis) Le système notifie l’acteur qu’une erreur s’est produite 
+\end{enumerate}
+\subsection{Gérer le redoublement des élèves}
+Acteurs : scolarité
+\\
+\'Etapes :
+\begin{enumerate}
+\item L’acteur se rend sur l’annuaire, par défaut tous les élèves passent à l’année supérieure
+\item L’acteur sélectionne un ou plusieurs élèves(s)
+\item L’acteur choisi de leur affecter le statut redoublant
+\item Le système met à jour automatiquement l’année d’étude des redoublants
+\item Le système notifie l’acteur que sa modification a bien été enregistrée 
+\item (5bis) Le système notifie l’acteur qu’une erreur s’est produite
+\end{enumerate}
+
+
+
+\section{Donn\'ees}
+\subsection{Mod\`ele de donn\'ees}
+
+\fbox{\centerline{\includegraphics[height=0.9\textheight]{"Stages"}}}
+
+\begin{mld}
+  Document & (\prim{id\_élève}, \prim{type}, \attr{lien})\\
+  Eleve & (\prim{id\_élève}, \attr{nom}, \attr{prénom}, \attr{mdp}, \attr{année}, \attr{promo}, \attr{mail}, \attr{date\_naissance}, \attr{sexe}, \attr{approfondissement}, \attr{add}, \attr{tel}, \foreign{id\_élève.1}, \foreign{type}, \foreign{titre}, \foreign{date\_deb})\\
+  Stage & (\prim{titre}, \prim{date\_deb}, \attr{date\_fin}, \attr{mission}, \attr{matériel}, \attr{logiciels}, \attr{langage}, \attr{gratification}, \attr{type\_gratification}, \attr{modalité}, \attr{horaires}, \attr{cond\_horaires}, \attr{temps\_stage}, \attr{quotité}, \attr{avantages}, \attr{protection\_maladie}, \attr{congés}, \attr{validation})\\
+  Gere & (\foreign{\prim{nom}}, \foreign{\prim{prénom}}, \foreign{\prim{id\_élève}}, \foreign{\prim{nom.1}}, \foreign{\prim{prénom.1}})\\
+  Scolarite & (\prim{nom}, \prim{prénom}, \attr{mail}, \attr{mdp})\\
+  Service & (\prim{nom\_service}, \prim{nom\_encadrant}, \attr{nom\_responsable}, \attr{prénom}, \attr{mdp}, \attr{fonction}, \attr{tel}, \attr{fax}, \attr{mail}, \foreign{titre}, \foreign{date\_deb})\\
+  Tuteur & (\prim{nom}, \prim{prénom}, \attr{tel}, \attr{mail}, \attr{adresse}, \foreign{id\_élève})\\
+  Administration & (\prim{nom}, \prim{prénom}, \attr{fonction}, \attr{tel}, \attr{mail})\\
+  Signataire & (\prim{id\_signataire}, \attr{nom}, \attr{prénom}, \attr{fonction}, \attr{service}, \attr{mail}, \attr{tel}, \attr{add\_envoie}, \foreign{nom.1}, \foreign{add})\\
+  Entreprise & (\prim{nom}, \prim{add}, \attr{cp}, \attr{ville}, \attr{pays}, \attr{effectif}, \attr{activité}, \attr{ape}, \attr{tel fax}, \attr{mail}, \attr{web}, \attr{siret}, \foreign{nom\_service}, \foreign{nom\_encadrant})\\
+\end{mld}
+
+\newpage
+\section{Interfaces utilisateurs}
+
+\subsection{\'El\`eves}
+\centering
+\subsubsection{\centerline{Connexion}}
+\fbox{\includegraphics[width=\textwidth]{"1Connexion"}}
+\newpage
+
+\subsubsection{\centerline{Tableau de bord}}
+\fbox{\includegraphics[width=\textwidth]{"2Tableau de bord"}}
+\newpage
+
+\subsubsection{\centerline{Fiche renseignement}}
+\fbox{\includegraphics[width=\textwidth]{"3Fiche renseignement"}}
+\newpage
+
+\subsubsection{\centerline{Convention impossible}}
+\fbox{\includegraphics[width=\textwidth]{"4Convention impossible"}}
+\newpage
+
+\subsubsection{\centerline{Convention signée}}
+\fbox{\includegraphics[width=\textwidth]{"5Convention signee"}}
+\newpage
+
+
+\subsubsection{\centerline{Convention à signer}}
+\fbox{\includegraphics[width=\textwidth]{"6Convention a signer"}}
+\newpage
+
+\subsubsection{\centerline{convention - popup signature électronique}}
+\fbox{\includegraphics[width=\textwidth]{"7Convention popup"}}
+\newpage
+
+\subsubsection{\centerline{Documents administratifs}}
+\fbox{\includegraphics[width=\textwidth]{"8Documents admin"}}
+\newpage
+
+\subsubsection{\centerline{documents administratifs - popup ajout d’un document}}
+\fbox{\includegraphics[width=\textwidth]{"9Documents admin popup"}}
+\newpage
+
+\subsection{Scolarit\'e}
+
+\subsubsection{\centerline{Listing élèves}}
+\fbox{\includegraphics[width=\textwidth]{"s1Listing eleves"}}
+\newpage 
+
+\subsubsection{\centerline{Détails élèves}}
+\fbox{\includegraphics[width=\textwidth]{"s2Details eleves"}}
+\newpage
+
+\subsubsection{\centerline{Listing entreprises}}
+\fbox{\includegraphics[width=\textwidth]{"s3Listing entreprises"}}
+\newpage
+
+\subsubsection{\centerline{Détails entreprises}}
+\fbox{\includegraphics[width=\textwidth]{"s4Details entreprises"}}
+\newpage
+
+
+
+
+\section{Diagrammes de s\'equence}
+
+\subsection{Pour les élèves}
+
+
+\fbox{\includegraphics[width=\textwidth]{"Remplir la fiche de renseignements"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Acceder a son compte et suivre son stage"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Signer la convention et la consulter"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Editer son profil"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Deposer et consulter son rapport"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Consulter les avis de l'entreprise"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Telecharger un template du rapport"}}
+
+\subsection{Pour la scolarité}
+
+
+\fbox{\includegraphics[width=\textwidth]{"Acceder a la liste des entreprises"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Elaborer le planning des soutenances"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Gerer les passages et redoublements"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Recuperer les rapports"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Suivre les comptes etudiants"}}
+
+
+\subsection{Pour l'entreprise}
+
+\fbox{\includegraphics[width=\textwidth]{"Acceder au rapport"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Donner son avis sur le stage etudiant"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Signer - remplir la convention"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Suivre son stagiaire"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Valider la diffusion du rapport"}}
+
+\subsection{Pour l'administration}
+
+\fbox{\includegraphics[width=\textwidth]{"Acceder a la fiche de renseignements et autres documents"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Gerer des statistiques"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Gerer attribution du tuteur academique"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Valider les stages"}}
+
+
+\subsection{Pour le Tuteur}
+
+\fbox{\includegraphics[width=\textwidth]{"Acceder a la fiche de renseignements et autres documents2"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Demander pour faire une visite"}}
+
+\fbox{\includegraphics[width=\textwidth]{"Donner une note - un avis"}}
+
+
+
+\section{Diagramme d'activité}
+
+\fbox{\includegraphics[width=\textwidth]{"diagActi"}}
+
+\chapter{Besoins non fonctionnels}
+\section{Li\'es \`a la s\'ecurit\'e}
+\begin{itemize}
+\item Les \'el\`eves ne doivent en aucun cas avoir acc\`es aux donn\'ees des autres \'el\`eves.
+\item Les donn\'ees doivent \^etre sauvegard\'ees tous les soirs.
+\item Les donn\'ees doivent \^etre chiffr\'ees.
+\item Les mots de passes sont sauvegard\'es crypt\'es dans la base de donn\'ees
+\item Un mot de passe al\'eatoire est g\'en\'er\'e \`a chaque cr\'eation de compte
+\item Les rapports de stage confidentiels ne doivent pas \^etre accessibles
+\end{itemize}
+
+\section{Li\'es aux \'ev\`enements}
+\begin{itemize}
+\item Les \'el\'ements dont l’\'ech\'eance est pass\'ee ne doivent plus \^etre modifiables
+\item Toutes les notifications apparaissent sur le compte de l’utilisateur et sont automatiquement envoy\'ees par email
+\end{itemize}
+
+\section{Li\'es aux utilisateurs}
+\begin{itemize}
+\item Par d\'efaut, tous les utilisateurs passent \`a l’ann\'ee sup\'erieure s’ils sont en 2A
+\item apr\`es deux ans d’inactivit\'e, les comptes utilisateurs sont automatiquement supprim\'es
+\end{itemize}
+
+\newpage
+\section{Li\'es aux documents}
+\begin{itemize}
+\item la partie 2 de la fiche de renseignement ne doit pouvoir \^etre compl\'et\'ee que si la partie 1 correspondante a \'et\'e remplie en int\'egralit\'e et valid\'ee num\'eriquement par le responsable des stages de l’ann\'ee concern\'ee
+\item lorsque l’\'el\`eve compl\`ete la partie 1 de la fiche de renseignement, le formulaire lui propose de remplir automatiquement l’adresse du lieu du stage si celui-ci correspond au lieu du stage. Sinon, les champs lui sont fournis pour entrer l’adresse manuellement
+\item avant de signer la convention de stage, lorsque celui-ci a lieu à l’\'etranger, l’attestation de s\'ecurit\'e sociale doit avoir \'et\'e ajout\'ee aux documents administratifs
+\item avant d’ajouter le rapport de stage, lorsque l’\'el\`eve est en 3A, l’attestation de non plagiat doit avoir \'et\'e d\'epos\'ee dans les documents administratifs
+\end{itemize}
+ 
+\section{Li\'es aux performances}
+\begin{itemize}
+\item Certaines donn\'ees sont automatiquement supprim\'ees apr\`es une p\'eriode donn\'ee sans acc\`es pour ne pas alourdir la base de donn\'ees
+\end{itemize}
+
+%Changement du format des titres de chapitre et section
+\titleformat{\chapter} [display]
+	{\centering\normalfont\huge\bfseries}
+  {\thechapter}
+  {20pt}
+  {\Huge}
+	
+\titleformat{\section} [display]
+	{\centering\normalfont\huge}
+  {\thesection}
+  {18pt}
+  {\Huge}
+
+\chapter*{Annexe A}
+\section*{Dictionnaire de données}
+
+\begin{flushleft}
+\textbf{\'El\`eve}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+id\_\'el\`eve & Num\`ero identifiant de l’\`etudiant & Num\`erique & Cl\`e primaire,\\
+&&& incr\`emental \\
+nom & Nom de l'\`etudiant & Alphanum\`erique & \\
+pr\`enom & Pr\`enom de l'\`etudiant & Alphanum\`erique & \\
+mdp & Mot de passe & Alphanum\`erique & \\
+ann\`ee & Ann\`ee universitaire & Date & \\
+promo & 2A ou 3A & Alphanum\`erique & \\
+mail & Adresse email & Alphanum\`erique & \\
+date\_naissance & Date de naissance & Date & \\
+sexe & & Alphanum\`erique & \\
+approfondissement & Approfondissement de l'\`etudiant & Alphanum\`erique & \\
+tel & Num\`ero de t\`el\`ephone & Alphanum\`erique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Document}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+id\_\'el\'eve & Num\'ero identifiant de l’\'etudiant & Num\'erique & Cl\'e primaire,\\
+&&& cl\'e \'etrang\'ere \\
+type & Type de document & Alphanum\'erique & Cl\'e primaire \\
+lien & Lien vers le document & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\newpage
+\begin{flushleft}
+\textbf{Entreprise}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom & Nom de l'entreprise & Alphanum\'erique & Cl\'e primaire \\
+add & Adresse du si\'ege social l’entreprise & Alphanum\'erique & Cl\'e primaire \\
+cp & Code postal & Num\'erique & \\
+ville & Ville & Alphanum\'erique & \\
+pays & Pays & Alphanum\'erique & \\
+effectif & Effectif de l'entreprise & Num\'erique & \\
+activit\'e & Activit\'e principale de l'entreprise & \\
+ape & Code APE & Alphanum\'erique & \\
+tel &  Num\'ero de t\'el\'ephone de l'entreprise & Alphanum\'erique & \\
+fax & Fax de l'entreprise & Alphanum\'erique & \\
+mail & Adresse email de l'entrerpise & Alphanum\'erique & \\
+web & Adresse du site web de l'entreprise & Alphanum\'erique & \\
+siret & Num\'ero de SIRET & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Service}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom\_service & Nom du service & Alphanum\'erique & Cl\'e primaire \\
+nom\_encadrant & Nom de l'encadrant & Alphanum\'erique & Cl\'e primaire \\
+pr\'enom & Pr\'enom de l'encadrant & Alphanum\'erique & \\
+mdp & Mot de passe & Alphanum\'erique & \\
+fonction & Fonction de l'encadrant dans le service & Alphanum\'erique & \\
+tel & Num\'ero de t\'el\'ephone de l'encadrant & Alphanum\'erique & \\
+fax & Fax de l'encadrant & Alphanum\'erique & \\
+mail & Adresse email de l'encadrant & Alphanum\'erique \\
+\hline
+\end{tabular}
+
+\newpage
+\begin{flushleft}
+\textbf{Stage}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+titre & Titre du stage & Alphanum\'erique & Cl\'e primaire \\
+date\_deb & Date de d\'ebut du stage & Alphanum\'erique & \\
+date\_fin & Date de fin du stage & Alphanum\'erique & \\
+mission & Descriptif du travail demand\'e au stagiaire & Alphanum\'erique & \\
+mat\'eriel & Type du mat\'eriel & Alphanum\'erique & \\
+logiciels & Logiciel(s) utilis\'e(s) & Alphanum\'erique & \\
+langage & Langage(s) de programmation utilis\'e(s) & Alphanum\'erique & \\
+gratification & Montant de la gratification & Alphanum\'erique & \\
+type\_gratification & Type : brut ou net & Alphanum\'erique & \\
+modalit\'e & Modalit\'e de versement de la gratification & Alphanum\'erique & \\
+horaires & Dur\'ee hebdomadaire maximal de pr\'esence de l'\'etudiant & Num\'erique & \\
+cond_horaires & Conditions particuli\'eres du temps de travail (nuit, dimanche, ...) & Alphanum\'erique & \\
+temps_stage & Temps complet ou partiel & Alphanum\'erique & \\
+quotit\'e & Si temps partiel, sp\'ecification de la quotit\'e & Alphanum\'erique & \\
+avantages & Liste de savantages accord\'ees à l'\'etudiants & Alphanum\'erique & \\
+protection\_maladie & Fournie ou non par l'entreprise & Alphanum\'erique & \\
+cong\'es & Modalit\'e des jours de cong\'es accord\'e ou non à l'\'etudiant & Alphanum\'erique \\
+validation & Modalit\'e de validation & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Signataire (Ressources humaines)}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+id\_signataire & Num\'ero identifiant du signataire & Alphanum\'erique & Cl\'e primaire,\\
+&&& incr\'emental \\
+nom & Nom du signataire de la convention & Alphanum\'erique & \\
+pr\'enom & Pr\'enom du signataire & Alphanum\'erique & \\
+fonction & Fonction du signataire & Alphanum\'erique & \\
+service & Nom du service d'appartenance & Alphanum\'erique & \\
+mail & Adresse email du signataire & Alphanum\'erique & \\
+tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
+add_envoi & Destination choisi pour l'envoi des documents (2 choix possibles) & Num\'erique &\\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Scolarit\'e}
+\end{flushleft}
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 89578601a3c2cea1a7bb69d9c5fd30ec9b664b4b
+\newpage
+\begin{flushleft}
+\textbf{Tuteur}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom & Nom du tuteur (acad\'emique) & Alphanum\'erique & Cl\'e primaire \\
+pr\'enom & Pr\'enom du tuteur & Alphanum\'erique & Cl\'e primaire \\
+mdp & Mot de passe & Alphanum\'erique & \\
+mail & Adresse email & Alphanum\'erique & \\
+tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
+adresse & & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Administration}
+\end{flushleft}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom & & Alphanum\'erique & Cl\'e primaire \\
+pr\'enom & & Alphanum\'erique & Cl\'e primaire \\
+mdp & Mot de passe & Alphanum\'erique & \\
+fonction & Fonction au sein de l'administration & Alphanum\'erique & \\
+tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
+mail & Adresse email univesit\'e de lorraine & Alphanum\'erique & \\
+\hline
+\end{tabular}
+
+\end{document}
+Contact GitHub API Training Shop Blog About
+>>>>>>> 63f56567535d2306a1d05a22dfe62fdbfb27ce98
 © 2016 GitHub, Inc. Terms Privacy Security Status Help
