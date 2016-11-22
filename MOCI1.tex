@@ -457,14 +457,14 @@ Acteurs : scolarité
 \fbox{\centerline{\includegraphics[height=0.9\textheight]{"Stages"}}}
 
 \begin{mld}
-  Document & (\prim{id\_élève}, \prim{type}, \attr{lien})\\
-  Eleve & (\prim{id\_élève}, \attr{nom}, \attr{prénom}, \attr{mdp}, \attr{année}, \attr{promo}, \attr{mail}, \attr{date\_naissance}, \attr{sexe}, \attr{approfondissement}, \attr{add}, \attr{tel}, \foreign{id\_élève.1}, \foreign{type}, \foreign{titre}, \foreign{date\_deb})\\
+  Document & (\prim{\foreign{id\_élève}}, \prim{type}, \attr{lien})\\
+  Eleve & (\prim{id\_élève}, \attr{nom}, \attr{prénom}, \attr{mdp}, \attr{année}, \attr{promo}, \attr{mail}, \attr{date\_naissance}, \attr{sexe}, \attr{approfondissement}, \attr{add}, \attr{tel}, \foreign{type}, \foreign{titre}, \foreign{date\_deb})\\
   Stage & (\prim{titre}, \prim{date\_deb}, \attr{date\_fin}, \attr{mission}, \attr{matériel}, \attr{logiciels}, \attr{langage}, \attr{gratification}, \attr{type\_gratification}, \attr{modalité}, \attr{horaires}, \attr{cond\_horaires}, \attr{temps\_stage}, \attr{quotité}, \attr{avantages}, \attr{protection\_maladie}, \attr{congés}, \attr{validation})\\
   Gere & (\foreign{\prim{nom}}, \foreign{\prim{prénom}}, \foreign{\prim{id\_élève}}, \foreign{\prim{nom.1}}, \foreign{\prim{prénom.1}})\\
   Scolarite & (\prim{nom}, \prim{prénom}, \attr{mail}, \attr{mdp})\\
   Service & (\prim{nom\_service}, \prim{nom\_encadrant}, \attr{nom\_responsable}, \attr{prénom}, \attr{mdp}, \attr{fonction}, \attr{tel}, \attr{fax}, \attr{mail}, \foreign{titre}, \foreign{date\_deb})\\
-  Tuteur & (\prim{nom}, \prim{prénom}, \attr{tel}, \attr{mail}, \attr{adresse}, \foreign{id\_élève})\\
-  Administration & (\prim{nom}, \prim{prénom}, \attr{fonction}, \attr{tel}, \attr{mail})\\
+  Tuteur & (\prim{nom}, \prim{prénom}, \attr{mdp}, \attr{tel}, \attr{mail}, \attr{adresse}, \foreign{id\_élève})\\
+  Administration & (\prim{nom}, \prim{prénom}, \attr{mdp}, \attr{fonction}, \attr{tel}, \attr{mail})\\
   Signataire & (\prim{id\_signataire}, \attr{nom}, \attr{prénom}, \attr{fonction}, \attr{service}, \attr{mail}, \attr{tel}, \attr{add\_envoie}, \foreign{nom.1}, \foreign{add})\\
   Entreprise & (\prim{nom}, \prim{add}, \attr{cp}, \attr{ville}, \attr{pays}, \attr{effectif}, \attr{activité}, \attr{ape}, \attr{tel fax}, \attr{mail}, \attr{web}, \attr{siret}, \foreign{nom\_service}, \foreign{nom\_encadrant})\\
 \end{mld}
