@@ -647,25 +647,25 @@ Acteurs : scolarité
 \section*{Dictionnaire de données}
 
 \begin{flushleft}
-\textbf{\'El\`eve}
+\textbf{\'Elève}
 \end{flushleft}
 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
 \hline
-id\_\'el\`eve & Num\`ero identifiant de l’\`etudiant & Num\`erique & Cl\`e primaire,\\
-&&& incr\`emental \\
-nom & Nom de l'\`etudiant & Alphanum\`erique & \\
-pr\`enom & Pr\`enom de l'\`etudiant & Alphanum\`erique & \\
-mdp & Mot de passe & Alphanum\`erique & \\
-ann\`ee & Ann\`ee universitaire & Date & \\
-promo & 2A ou 3A & Alphanum\`erique & \\
-mail & Adresse email & Alphanum\`erique & \\
+id\_élève & Numéro identifiant de l’élève & Numérique & Clé primaire,\\
+&&& incrémental \\
+nom & Nom de l'élève & Alphanumérique & \\
+prénom & Prénom de l'élève & Alphanumérique & \\
+mdp & Mot de passe & Alphanumérique & \\
+année & Année universitaire & Date & \\
+promo & 2A ou 3A & Alphanumérique & \\
+mail & Adresse email & Alphanumérique & \\
 date\_naissance & Date de naissance & Date & \\
-sexe & & Alphanum\`erique & \\
-approfondissement & Approfondissement de l'\`etudiant & Alphanum\`erique & \\
-tel & Num\`ero de t\`el\`ephone & Alphanum\`erique & \\
+sexe & & Alphanumérique & \\
+approfondissement & Approfondissement de l'élève & Alphanumérique & \\
+tel & Numéro de téléphone & Alphanumérique & \\
 \hline
 \end{tabular}
 
@@ -673,14 +673,14 @@ tel & Num\`ero de t\`el\`ephone & Alphanum\`erique & \\
 \textbf{Document}
 \end{flushleft}
 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
 \hline
-id\_\'el\'eve & Num\'ero identifiant de l’\'etudiant & Num\'erique & Cl\'e primaire,\\
-&&& cl\'e \'etrang\'ere \\
-type & Type de document & Alphanum\'erique & Cl\'e primaire \\
-lien & Lien vers le document & Alphanum\'erique & \\
+id\_élève & Numéro identifiant de l’élève & Numérique & Clé primaire,\\
+&&& clé étrangère \\
+type & Type de document & Alphanumérique & Clé primaire \\
+lien & Lien vers le document & Alphanumérique & \\
 \hline
 \end{tabular}
 
@@ -689,23 +689,23 @@ lien & Lien vers le document & Alphanum\'erique & \\
 \textbf{Entreprise}
 \end{flushleft}
 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
 \hline
-nom & Nom de l'entreprise & Alphanum\'erique & Cl\'e primaire \\
-add & Adresse du si\'ege social l’entreprise & Alphanum\'erique & Cl\'e primaire \\
-cp & Code postal & Num\'erique & \\
-ville & Ville & Alphanum\'erique & \\
-pays & Pays & Alphanum\'erique & \\
-effectif & Effectif de l'entreprise & Num\'erique & \\
-activit\'e & Activit\'e principale de l'entreprise & \\
-ape & Code APE & Alphanum\'erique & \\
-tel &  Num\'ero de t\'el\'ephone de l'entreprise & Alphanum\'erique & \\
-fax & Fax de l'entreprise & Alphanum\'erique & \\
-mail & Adresse email de l'entrerpise & Alphanum\'erique & \\
-web & Adresse du site web de l'entreprise & Alphanum\'erique & \\
-siret & Num\'ero de SIRET & Alphanum\'erique & \\
+nom & Nom de l'entreprise & Alphanumérique & Clé primaire \\
+add & Adresse du siège social l’entreprise & Alphanumérique & Clé primaire \\
+cp & Code postal & Numérique & \\
+ville & Ville & Alphanumérique & \\
+pays & Pays & Alphanumérique & \\
+effectif & Effectif de l'entreprise & Numérique & \\
+activité & Activité principale de l'entreprise & Alphanumérique & \\
+ape & Code APE & Alphanumérique & \\
+tel &  Numéro de téléphone de l'entreprise & Alphanumérique & \\
+fax & Fax de l'entreprise & Alphanumérique & \\
+mail & Adresse email de l’entreprise & Alphanumérique & \\
+web & Adresse du site web de l'entreprise & Alphanumérique & \\
+siret & Numéro de SIRET & Alphanumérique & \\
 \hline
 \end{tabular}
 
@@ -713,18 +713,18 @@ siret & Num\'ero de SIRET & Alphanum\'erique & \\
 \textbf{Service}
 \end{flushleft}
 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
 \hline
-nom\_service & Nom du service & Alphanum\'erique & Cl\'e primaire \\
-nom\_encadrant & Nom de l'encadrant & Alphanum\'erique & Cl\'e primaire \\
-pr\'enom & Pr\'enom de l'encadrant & Alphanum\'erique & \\
-mdp & Mot de passe & Alphanum\'erique & \\
-fonction & Fonction de l'encadrant dans le service & Alphanum\'erique & \\
-tel & Num\'ero de t\'el\'ephone de l'encadrant & Alphanum\'erique & \\
-fax & Fax de l'encadrant & Alphanum\'erique & \\
-mail & Adresse email de l'encadrant & Alphanum\'erique \\
+nom\_service & Nom du service & Alphanumérique & Clé primaire \\
+nom\_encadrant & Nom de l'encadrant & Alphanumérique & Clé primaire \\
+prénom & Prénom de l'encadrant & Alphanumérique & \\
+mdp & Mot de passe & Alphanumérique & \\
+fonction & Fonction de l'encadrant dans le service & Alphanumérique & \\
+tel & Numéro de téléphone de l'encadrant & Alphanumérique & \\
+fax & Fax de l'encadrant & Alphanumérique & \\
+mail & Adresse email de l'encadrant & Alphanumérique & \\
 \hline
 \end{tabular}
 
@@ -733,28 +733,28 @@ mail & Adresse email de l'encadrant & Alphanum\'erique \\
 \textbf{Stage}
 \end{flushleft}
 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|l|p{6cm}|l|l|}
 \hline
 \textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
 \hline
-titre & Titre du stage & Alphanum\'erique & Cl\'e primaire \\
-date\_deb & Date de d\'ebut du stage & Alphanum\'erique & \\
-date\_fin & Date de fin du stage & Alphanum\'erique & \\
-mission & Descriptif du travail demand\'e au stagiaire & Alphanum\'erique & \\
-mat\'eriel & Type du mat\'eriel & Alphanum\'erique & \\
-logiciels & Logiciel(s) utilis\'e(s) & Alphanum\'erique & \\
-langage & Langage(s) de programmation utilis\'e(s) & Alphanum\'erique & \\
-gratification & Montant de la gratification & Alphanum\'erique & \\
-type\_gratification & Type : brut ou net & Alphanum\'erique & \\
-modalit\'e & Modalit\'e de versement de la gratification & Alphanum\'erique & \\
-horaires & Dur\'ee hebdomadaire maximal de pr\'esence de l'\'etudiant & Num\'erique & \\
-cond_horaires & Conditions particuli\'eres du temps de travail (nuit, dimanche, ...) & Alphanum\'erique & \\
-temps_stage & Temps complet ou partiel & Alphanum\'erique & \\
-quotit\'e & Si temps partiel, sp\'ecification de la quotit\'e & Alphanum\'erique & \\
-avantages & Liste de savantages accord\'ees à l'\'etudiants & Alphanum\'erique & \\
-protection\_maladie & Fournie ou non par l'entreprise & Alphanum\'erique & \\
-cong\'es & Modalit\'e des jours de cong\'es accord\'e ou non à l'\'etudiant & Alphanum\'erique \\
-validation & Modalit\'e de validation & Alphanum\'erique & \\
+titre & Titre du stage & Alphanumérique & Clé primaire \\
+date\_deb & Date de début du stage & Alphanumérique & Clé primaire \\
+date\_fin & Date de fin du stage & Alphanumérique & \\
+mission & Descriptif du travail demandé au stagiaire & Alphanumérique & \\
+matériel & Type du matériel & Alphanumérique & \\
+logiciels & Logiciel(s) utilisé(s) & Alphanumérique & \\
+langage & Langage(s) de programmation utilisé(s) & Alphanumérique & \\
+gratification & Montant de la gratification & Alphanumérique & \\
+type\_gratification & Type : brut ou net & Alphanumérique & \\
+modalité & Modalité de versement de la gratification & Alphanumérique & \\
+horaires & Durée hebdomadaire maximal de présence de l'élève & Numérique & \\
+cond_horaires & Conditions particulières du temps de travail (nuit, dimanche, ...) & Alphanumérique & \\
+temps_stage & Temps complet ou partiel & Alphanumérique & \\
+quotité & Si temps partiel, spécification de la quotité & Alphanumérique & \\
+avantages & Liste des avantages accordés à l’élève & Alphanumérique & \\
+protection\_maladie & Fournie ou non par l'entreprise & Alphanumérique & \\
+congés & Modalité des jours de congés accordé ou non à l'élève & Alphanumérique &\\
+validation & Modalité de validation & Alphanumérique & \\
 \hline
 \end{tabular}
 
@@ -762,52 +762,52 @@ validation & Modalit\'e de validation & Alphanum\'erique & \\
 \textbf{Signataire (Ressources humaines)}
 \end{flushleft}
 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|l|p{6cm}|l|l|}
 \hline
 \textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
 \hline
-id\_signataire & Num\'ero identifiant du signataire & Alphanum\'erique & Cl\'e primaire,\\
-&&& incr\'emental \\
-nom & Nom du signataire de la convention & Alphanum\'erique & \\
-pr\'enom & Pr\'enom du signataire & Alphanum\'erique & \\
-fonction & Fonction du signataire & Alphanum\'erique & \\
-service & Nom du service d'appartenance & Alphanum\'erique & \\
-mail & Adresse email du signataire & Alphanum\'erique & \\
-tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
-add_envoi & Destination choisi pour l'envoi des documents (2 choix possibles) & Num\'erique &\\
-\hline
-\end{tabular}
-
-\begin{flushleft}
-\textbf{Scolarit\'e}
-\end{flushleft}
-
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
-\hline
-nom & Nom de la personne charg\'e de la gestion du stage de l'\'etudiant & Alphanum\'erique & Cl\'e primaire & \\
-pr\'enom & & Alphanum\'erique & Cl\'e primaire \\
-mail & Adresse email & Alphanum\'erique & \\
-mdp & Mot de passe & Alphanum\'erique & \\
+id\_signataire & Numéro identifiant du signataire & Alphanumérique & Clé primaire,\\
+&&& incrémental \\
+nom & Nom du signataire de la convention & Alphanumérique & \\
+prénom & Prénom du signataire & Alphanumérique & \\
+fonction & Fonction du signataire & Alphanumérique & \\
+service & Nom du service d'appartenance & Alphanumérique & \\
+mail & Adresse email du signataire & Alphanumérique & \\
+tel & Numéro de téléphone & Alphanumérique & \\
+add_envoi & Destination choisi pour l'envoi des documents (2 choix possibles) & Numérique &\\
 \hline
 \end{tabular}
 
 \newpage
 \begin{flushleft}
-\textbf{Tuteur}
+\textbf{Scolarité}
 \end{flushleft}
 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|l|p{6cm}|l|l|}
 \hline
 \textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
 \hline
-nom & Nom du tuteur (acad\'emique) & Alphanum\'erique & Cl\'e primaire \\
-pr\'enom & Pr\'enom du tuteur & Alphanum\'erique & Cl\'e primaire \\
-mdp & Mot de passe & Alphanum\'erique & \\
-mail & Adresse email & Alphanum\'erique & \\
-tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
-adresse & & Alphanum\'erique & \\
+nom & Nom de la personne chargé de la gestion du stage de l'élève & Alphanumérique & Clé primaire \\
+prénom & & Alphanumérique & Clé primaire \\
+mail & Adresse email & Alphanumérique & \\
+mdp & Mot de passe & Alphanumérique & \\
+\hline
+\end{tabular}
+
+\begin{flushleft}
+\textbf{Tuteur}
+\end{flushleft}
+
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
+\hline
+nom & Nom du tuteur (académique) & Alphanumérique & Clé primaire \\
+prénom & Prénom du tuteur & Alphanumérique & Clé primaire \\
+mdp & Mot de passe & Alphanumérique & \\
+mail & Adresse email & Alphanumérique & \\
+tel & Numéro de téléphone & Alphanumérique & \\
+adresse & & Alphanumérique & \\
 \hline
 \end{tabular}
 
@@ -815,16 +815,16 @@ adresse & & Alphanum\'erique & \\
 \textbf{Administration}
 \end{flushleft}
 
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
 \hline
-nom & & Alphanum\'erique & Cl\'e primaire \\
-pr\'enom & & Alphanum\'erique & Cl\'e primaire \\
-mdp & Mot de passe & Alphanum\'erique & \\
-fonction & Fonction au sein de l'administration & Alphanum\'erique & \\
-tel & Num\'ero de t\'el\'ephone & Alphanum\'erique & \\
-mail & Adresse email univesit\'e de lorraine & Alphanum\'erique & \\
+nom & & Alphanumérique & Clé primaire \\
+prénom & & Alphanumérique & Clé primaire \\
+mdp & Mot de passe & Alphanumérique & \\
+fonction & Fonction au sein de l'administration & Alphanumérique & \\
+tel & Numéro de téléphone & Alphanumérique & \\
+mail & Adresse email université de lorraine & Alphanumérique & \\
 \hline
 \end{tabular}
 
