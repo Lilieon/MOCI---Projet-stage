@@ -50,7 +50,7 @@
 \usepackage{array}
 
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
-\graphicspath{{Diagramme/ADMIN/} {Diagramme/ELEVE/} {Diagramme/ENSEIGNANT/} {Diagramme/ENTREPRISE/} {Diagramme/SCOLARITE/} }
+\graphicspath{{Diagramme/ADMIN/} {Diagramme/ELEVE/} {Diagramme/ENSEIGNANT/} {Diagramme/ENTREPRISE/} {Diagramme/SCOLARITE/} {Diagramme/USECASE/} }
 
 
 \usepackage[normalem]{ulem}
@@ -454,7 +454,7 @@ Acteurs : scolarité
 \section{Donn\'ees}
 \subsection{Mod\`ele de donn\'ees}
 
-\fbox{\centerline{\includegraphics[height=0.9\textheight]{"Stages"}}}
+\includegraphics[height=0.9\textheight]{"Stages"}
 
 \begin{mld}
   Document & (\prim{\foreign{id\_élève}}, \prim{type}, \attr{lien})\\
@@ -529,13 +529,16 @@ Acteurs : scolarité
 \fbox{\includegraphics[width=\textwidth]{"s4Details entreprises"}}
 \newpage
 
+\section{Diagrammes de cas d'utilisation}
 
+\fbox{\includegraphics[width=\textwidth]{"UseCaseDoc"}}
+
+\fbox{\includegraphics[width=\textwidth]{"UseCaseUsers"}}
 
 
 \section{Diagrammes de s\'equence}
 
 \subsection{Pour les élèves}
-
 
 \fbox{\includegraphics[width=\textwidth]{"Remplir la fiche de renseignements"}}
 
@@ -652,7 +655,9 @@ Acteurs : scolarité
   {18pt}
   {\Huge}
 
+\appendix
 \chapter*{Annexe A}
+\addcontentsline{toc}{chapter}{Annexe A - Dictionnaire de données}
 \section*{Dictionnaire de données}
 
 \begin{flushleft}

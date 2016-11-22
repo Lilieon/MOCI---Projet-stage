@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.10)  22 NOV 2016 13:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.7.10)  22 NOV 2016 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -717,18 +717,13 @@ Overfull \hbox (4.71912pt too wide) in paragraph at lines 444--445
 Sel^^Reves passent ^^Ra l'ann^^See sup^^Serieure 
  []
 
-<Diagramme/ADMIN/"Stages".png, id=466, 571.13374pt x 1021.8175pt>
+<Diagramme/ADMIN/"Stages".png, id=476, 571.13374pt x 1021.8175pt>
 File: Diagramme/ADMIN/"Stages".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"Stages".png>
 Package pdftex.def Info: Diagramme/ADMIN/"Stages".png used on input line 457.
 (pdftex.def)             Requested size: 299.71027pt x 536.2166pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 457--458
-[] 
- []
-
-[17]
+ [17]
 Underfull \hbox (badness 3758) in paragraph at lines 465--466
 []|\OT1/cmr/m/n/10.95 (|   []   |   []   |   [], |   []   |   []   |   [], \OT1
 /cmr/m/it/10.95 nom[]-re-spon-s-able\OT1/cmr/m/n/10.95 , \OT1/cmr/m/it/10.95 pr
@@ -741,7 +736,7 @@ Overfull \hbox (10.95003pt too wide) in paragraph at lines 459--470
  []
 
 [18 <./Diagramme/ADMIN/Stages.png>] [19]
-<Diagramme/ADMIN/"1Connexion".png, id=490, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"1Connexion".png, id=500, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"1Connexion".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"1Connexion".png>
@@ -754,7 +749,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 478--479
  []
 
 [20 <./Diagramme/ADMIN/1Connexion.png>]
-<Diagramme/ADMIN/"2Tableau de bord".png, id=496, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"2Tableau de bord".png, id=506, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"2Tableau de bord".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"2Tableau de bord".png>
@@ -767,7 +762,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 482--483
  []
 
 [21 <./Diagramme/ADMIN/2Tableau de bord.png>]
-<Diagramme/ADMIN/"3Fiche renseignement".png, id=502, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"3Fiche renseignement".png, id=512, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"3Fiche renseignement".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"3Fiche renseignement".png>
@@ -780,7 +775,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 486--487
  []
 
 [22 <./Diagramme/ADMIN/3Fiche renseignement.png>]
-<Diagramme/ADMIN/"4Convention impossible".png, id=508, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"4Convention impossible".png, id=518, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"4Convention impossible".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"4Convention impossible".png>
@@ -793,7 +788,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 490--491
  []
 
 [23 <./Diagramme/ADMIN/4Convention impossible.png>]
-<Diagramme/ADMIN/"5Convention signee".png, id=514, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"5Convention signee".png, id=525, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"5Convention signee".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"5Convention signee".png>
@@ -806,7 +801,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 494--495
  []
 
 [24 <./Diagramme/ADMIN/5Convention signee.png>]
-<Diagramme/ADMIN/"6Convention a signer".png, id=520, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"6Convention a signer".png, id=531, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"6Convention a signer".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"6Convention a signer".png>
@@ -819,7 +814,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 499--500
  []
 
 [25 <./Diagramme/ADMIN/6Convention a signer.png>]
-<Diagramme/ADMIN/"7Convention popup".png, id=528, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"7Convention popup".png, id=538, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"7Convention popup".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"7Convention popup".png>
@@ -832,7 +827,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 503--504
  []
 
 [26 <./Diagramme/ADMIN/7Convention popup.png>]
-<Diagramme/ADMIN/"8Documents admin".png, id=534, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"8Documents admin".png, id=544, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"8Documents admin".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"8Documents admin".png>
@@ -845,7 +840,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 507--508
  []
 
 [27 <./Diagramme/ADMIN/8Documents admin.png>]
-<Diagramme/ADMIN/"9Documents admin popup".png, id=540, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"9Documents admin popup".png, id=550, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"9Documents admin popup".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"9Documents admin popup".png>
@@ -858,7 +853,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 511--512
  []
 
 [28 <./Diagramme/ADMIN/9Documents admin popup.png>]
-<Diagramme/ADMIN/"s1Listing eleves".png, id=546, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"s1Listing eleves".png, id=556, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"s1Listing eleves".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"s1Listing eleves".png>
@@ -871,7 +866,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 517--518
  []
 
 [29 <./Diagramme/ADMIN/s1Listing eleves.png>]
-<Diagramme/ADMIN/"s2Details eleves".png, id=552, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"s2Details eleves".png, id=562, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"s2Details eleves".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"s2Details eleves".png>
@@ -884,7 +879,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 521--522
  []
 
 [30 <./Diagramme/ADMIN/s2Details eleves.png>]
-<Diagramme/ADMIN/"s3Listing entreprises".png, id=558, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"s3Listing entreprises".png, id=568, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"s3Listing entreprises".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"s3Listing entreprises".png>
@@ -897,7 +892,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 525--526
  []
 
 [31 <./Diagramme/ADMIN/s3Listing entreprises.png>]
-<Diagramme/ADMIN/"s4Details entreprises".png, id=565, 327.624pt x 228.855pt>
+<Diagramme/ADMIN/"s4Details entreprises".png, id=575, 327.624pt x 228.855pt>
 File: Diagramme/ADMIN/"s4Details entreprises".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"s4Details entreprises".png>
@@ -910,460 +905,485 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 529--530
  []
 
 [32 <./Diagramme/ADMIN/s4Details entreprises.png>]
-<Diagramme/ELEVE/"Remplir la fiche de renseignements".png, id=571, 356.83313pt 
+<Diagramme/USECASE/"UseCaseDoc".png, id=581, 619.31375pt x 686.565pt>
+File: Diagramme/USECASE/"UseCaseDoc".png Graphic file (type png)
+
+<use Diagramme/USECASE/"UseCaseDoc".png>
+Package pdftex.def Info: Diagramme/USECASE/"UseCaseDoc".png used on input line 
+534.
+(pdftex.def)             Requested size: 418.25555pt x 463.69423pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 534--535
+ [] 
+ []
+
+<Diagramme/USECASE/"UseCaseUsers".png, id=582, 577.15625pt x 685.56125pt>
+File: Diagramme/USECASE/"UseCaseUsers".png Graphic file (type png)
+
+<use Diagramme/USECASE/"UseCaseUsers".png>
+Package pdftex.def Info: Diagramme/USECASE/"UseCaseUsers".png used on input lin
+e 536.
+(pdftex.def)             Requested size: 418.25555pt x 496.8361pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 536--537
+ [][] 
+ []
+
+[33 <./Diagramme/USECASE/UseCaseDoc.png>]
+<Diagramme/ELEVE/"Remplir la fiche de renseignements".png, id=587, 356.83313pt 
 x 198.7425pt>
 File: Diagramme/ELEVE/"Remplir la fiche de renseignements".png Graphic file (ty
 pe png)
  <use Diagramme/ELEVE/"Remplir la fiche de renseignements".png>
 Package pdftex.def Info: Diagramme/ELEVE/"Remplir la fiche de renseignements".p
-ng used on input line 540.
+ng used on input line 543.
 (pdftex.def)             Requested size: 418.25555pt x 232.96446pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 540--541
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 543--544
  [] 
  []
 
-
-<Diagramme/ELEVE/"Acceder a son compte et suivre son stage".png, id=572, 390.45
+[34 <./Diagramme/USECASE/UseCaseUsers.png>]
+<Diagramme/ELEVE/"Acceder a son compte et suivre son stage".png, id=592, 390.45
 876pt x 205.76875pt>
 File: Diagramme/ELEVE/"Acceder a son compte et suivre son stage".png Graphic fi
 le (type png)
 
 <use Diagramme/ELEVE/"Acceder a son compte et suivre son stage".png>
 Package pdftex.def Info: Diagramme/ELEVE/"Acceder a son compte et suivre son st
-age".png used on input line 542.
+age".png used on input line 545.
 (pdftex.def)             Requested size: 418.25555pt x 220.42783pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 542--543
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 545--546
  [][] 
  []
 
 
-<Diagramme/ELEVE/"Signer la convention et la consulter".png, id=573, 535.2497pt
+<Diagramme/ELEVE/"Signer la convention et la consulter".png, id=593, 535.2497pt
  x 352.31625pt>
 File: Diagramme/ELEVE/"Signer la convention et la consulter".png Graphic file (
 type png)
 
 <use Diagramme/ELEVE/"Signer la convention et la consulter".png>
 Package pdftex.def Info: Diagramme/ELEVE/"Signer la convention et la consulter"
-.png used on input line 544.
+.png used on input line 547.
 (pdftex.def)             Requested size: 418.25555pt x 275.32166pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 544--545
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 547--548
  [][] 
  []
 
-[33 <./Diagramme/ELEVE/Remplir la fiche de renseignements.png> <./Diagramme/ELE
+[35 <./Diagramme/ELEVE/Remplir la fiche de renseignements.png> <./Diagramme/ELE
 VE/Acceder a son compte et suivre son stage.png (PNG copy)>]
-<Diagramme/ELEVE/"Editer son profil".png, id=579, 528.47438pt x 253.69781pt>
+<Diagramme/ELEVE/"Editer son profil".png, id=599, 528.47438pt x 253.69781pt>
 File: Diagramme/ELEVE/"Editer son profil".png Graphic file (type png)
 
 <use Diagramme/ELEVE/"Editer son profil".png>
 Package pdftex.def Info: Diagramme/ELEVE/"Editer son profil".png used on input 
-line 546.
+line 549.
 (pdftex.def)             Requested size: 418.25555pt x 200.78682pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 546--547
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 549--550
  [][] 
  []
 
 
-<Diagramme/ELEVE/"Deposer et consulter son rapport".png, id=580, 606.265pt x 41
+<Diagramme/ELEVE/"Deposer et consulter son rapport".png, id=600, 606.265pt x 41
 1.5375pt>
 File: Diagramme/ELEVE/"Deposer et consulter son rapport".png Graphic file (type
  png)
  <use Diagramme/ELEVE/"Deposer et consulter son rapport".png>
 Package pdftex.def Info: Diagramme/ELEVE/"Deposer et consulter son rapport".png
- used on input line 548.
+ used on input line 551.
 (pdftex.def)             Requested size: 418.25555pt x 283.91722pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 548--549
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 551--552
  [][] 
  []
 
-[34 <./Diagramme/ELEVE/Signer la convention et la consulter.png> <./Diagramme/E
+[36 <./Diagramme/ELEVE/Signer la convention et la consulter.png> <./Diagramme/E
 LEVE/Editer son profil.png>]
-<Diagramme/ELEVE/"Consulter les avis de l'entreprise".png, id=587, 274.77657pt 
+<Diagramme/ELEVE/"Consulter les avis de l'entreprise".png, id=607, 274.77657pt 
 x 154.32657pt>
 File: Diagramme/ELEVE/"Consulter les avis de l'entreprise".png Graphic file (ty
 pe png)
  <use Diagramme/ELEVE/"Consulter les avis de l'entreprise".png>
 Package pdftex.def Info: Diagramme/ELEVE/"Consulter les avis de l'entreprise".p
-ng used on input line 550.
+ng used on input line 553.
 (pdftex.def)             Requested size: 418.25555pt x 234.932pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 550--551
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 553--554
  [][] 
  []
 
 
-<Diagramme/ELEVE/"Telecharger un template du rapport".png, id=588, 517.935pt x 
+<Diagramme/ELEVE/"Telecharger un template du rapport".png, id=608, 517.935pt x 
 253.69781pt>
 File: Diagramme/ELEVE/"Telecharger un template du rapport".png Graphic file (ty
 pe png)
  <use Diagramme/ELEVE/"Telecharger un template du rapport".png>
 Package pdftex.def Info: Diagramme/ELEVE/"Telecharger un template du rapport".p
-ng used on input line 552.
+ng used on input line 555.
 (pdftex.def)             Requested size: 418.25555pt x 204.88246pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 552--553
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 555--556
  [][] 
  []
 
-[35 <./Diagramme/ELEVE/Deposer et consulter son rapport.png (PNG copy)> <./Diag
+[37 <./Diagramme/ELEVE/Deposer et consulter son rapport.png (PNG copy)> <./Diag
 ramme/ELEVE/Consulter les avis de l'entreprise.png>]
-<Diagramme/SCOLARITE/"Acceder a la liste des entreprises".png, id=594, 271.7653
+<Diagramme/SCOLARITE/"Acceder a la liste des entreprises".png, id=615, 271.7653
 2pt x 154.32657pt>
 File: Diagramme/SCOLARITE/"Acceder a la liste des entreprises".png Graphic file
  (type png)
 
 <use Diagramme/SCOLARITE/"Acceder a la liste des entreprises".png>
 Package pdftex.def Info: Diagramme/SCOLARITE/"Acceder a la liste des entreprise
-s".png used on input line 557.
+s".png used on input line 560.
 (pdftex.def)             Requested size: 418.25555pt x 237.52467pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 557--558
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 560--561
  [] 
  []
 
 
-<Diagramme/SCOLARITE/"Elaborer le planning des soutenances".png, id=595, 380.92
+<Diagramme/SCOLARITE/"Elaborer le planning des soutenances".png, id=616, 380.92
 313pt x 230.36063pt>
 File: Diagramme/SCOLARITE/"Elaborer le planning des soutenances".png Graphic fi
 le (type png)
 
 <use Diagramme/SCOLARITE/"Elaborer le planning des soutenances".png>
 Package pdftex.def Info: Diagramme/SCOLARITE/"Elaborer le planning des soutenan
-ces".png used on input line 559.
+ces".png used on input line 562.
 (pdftex.def)             Requested size: 418.25555pt x 252.94753pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 559--560
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 562--563
  [][] 
  []
 
-[36 <./Diagramme/ELEVE/Telecharger un template du rapport.png> <./Diagramme/SCO
+[38 <./Diagramme/ELEVE/Telecharger un template du rapport.png> <./Diagramme/SCO
 LARITE/Acceder a la liste des entreprises.png>]
-<Diagramme/SCOLARITE/"Gerer les passages et redoublements".png, id=602, 453.945
+<Diagramme/SCOLARITE/"Gerer les passages et redoublements".png, id=623, 453.945
 94pt x 297.36093pt>
 File: Diagramme/SCOLARITE/"Gerer les passages et redoublements".png Graphic fil
 e (type png)
 
 <use Diagramme/SCOLARITE/"Gerer les passages et redoublements".png>
 Package pdftex.def Info: Diagramme/SCOLARITE/"Gerer les passages et redoublemen
-ts".png used on input line 561.
+ts".png used on input line 564.
 (pdftex.def)             Requested size: 418.25555pt x 273.98373pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 561--562
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 564--565
  [][] 
  []
 
 
-<Diagramme/SCOLARITE/"Recuperer les rapports".png, id=603, 604.2575pt x 396.481
+<Diagramme/SCOLARITE/"Recuperer les rapports".png, id=624, 604.2575pt x 396.481
 25pt>
 File: Diagramme/SCOLARITE/"Recuperer les rapports".png Graphic file (type png)
  <use Diagramme/SCOLARITE/"Recuperer les rapports".png>
 Package pdftex.def Info: Diagramme/SCOLARITE/"Recuperer les rapports".png used 
-on input line 563.
+on input line 566.
 (pdftex.def)             Requested size: 418.25555pt x 274.43747pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 563--564
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 566--567
  [][] 
  []
 
-[37 <./Diagramme/SCOLARITE/Elaborer le planning des soutenances.png> <./Diagram
+[39 <./Diagramme/SCOLARITE/Elaborer le planning des soutenances.png> <./Diagram
 me/SCOLARITE/Gerer les passages et redoublements.png>]
-<Diagramme/SCOLARITE/"Suivre les comptes etudiants".png, id=611, 573.14125pt x 
+<Diagramme/SCOLARITE/"Suivre les comptes etudiants".png, id=631, 573.14125pt x 
 338.26375pt>
 File: Diagramme/SCOLARITE/"Suivre les comptes etudiants".png Graphic file (type
  png)
  <use Diagramme/SCOLARITE/"Suivre les comptes etudiants".png>
 Package pdftex.def Info: Diagramme/SCOLARITE/"Suivre les comptes etudiants".png
- used on input line 565.
+ used on input line 568.
 (pdftex.def)             Requested size: 418.25555pt x 246.85304pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 565--566
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 568--569
  [][] 
  []
 
 
-<Diagramme/ENTREPRISE/"Acceder au rapport".png, id=612, 259.7203pt x 154.32657p
+<Diagramme/ENTREPRISE/"Acceder au rapport".png, id=632, 259.7203pt x 154.32657p
 t>
 File: Diagramme/ENTREPRISE/"Acceder au rapport".png Graphic file (type png)
  <use Diagramme/ENTREPRISE/"Acceder au rapport".png>
 Package pdftex.def Info: Diagramme/ENTREPRISE/"Acceder au rapport".png used on 
-input line 570.
+input line 573.
 (pdftex.def)             Requested size: 418.25555pt x 248.52881pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 570--571
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 573--574
  [] 
  []
 
-[38 <./Diagramme/SCOLARITE/Recuperer les rapports.png (PNG copy)> <./Diagramme/
+[40 <./Diagramme/SCOLARITE/Recuperer les rapports.png (PNG copy)> <./Diagramme/
 SCOLARITE/Suivre les comptes etudiants.png (PNG copy)>]
-<Diagramme/ENTREPRISE/"Donner son avis sur le stage etudiant".png, id=617, 551.
+<Diagramme/ENTREPRISE/"Donner son avis sur le stage etudiant".png, id=637, 551.
 05875pt x 338.26375pt>
 File: Diagramme/ENTREPRISE/"Donner son avis sur le stage etudiant".png Graphic 
 file (type png)
 
 <use Diagramme/ENTREPRISE/"Donner son avis sur le stage etudiant".png>
 Package pdftex.def Info: Diagramme/ENTREPRISE/"Donner son avis sur le stage etu
-diant".png used on input line 572.
+diant".png used on input line 575.
 (pdftex.def)             Requested size: 418.25555pt x 256.75278pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 572--573
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 575--576
  [][] 
  []
 
 
-<Diagramme/ENTREPRISE/"Signer - remplir la convention".png, id=618, 397.485pt x
+<Diagramme/ENTREPRISE/"Signer - remplir la convention".png, id=638, 397.485pt x
  296.10625pt>
 File: Diagramme/ENTREPRISE/"Signer - remplir la convention".png Graphic file (t
 ype png)
  <use Diagramme/ENTREPRISE/"Signer - remplir la convention".png>
 Package pdftex.def Info: Diagramme/ENTREPRISE/"Signer - remplir la convention".
-png used on input line 574.
+png used on input line 577.
 (pdftex.def)             Requested size: 418.25555pt x 311.58942pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 574--575
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 577--578
  [][] 
  []
 
-[39 <./Diagramme/ENTREPRISE/Acceder au rapport.png> <./Diagramme/ENTREPRISE/Don
+[41 <./Diagramme/ENTREPRISE/Acceder au rapport.png> <./Diagramme/ENTREPRISE/Don
 ner son avis sur le stage etudiant.png (PNG copy)>]
-<Diagramme/ENTREPRISE/"Suivre son stagiaire".png, id=624, 264.99pt x 154.32657p
+<Diagramme/ENTREPRISE/"Suivre son stagiaire".png, id=644, 264.99pt x 154.32657p
 t>
 File: Diagramme/ENTREPRISE/"Suivre son stagiaire".png Graphic file (type png)
  <use Diagramme/ENTREPRISE/"Suivre son stagiaire".png>
 Package pdftex.def Info: Diagramme/ENTREPRISE/"Suivre son stagiaire".png used o
-n input line 576.
+n input line 579.
 (pdftex.def)             Requested size: 418.25555pt x 243.60486pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 576--577
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 579--580
  [][] 
  []
 
 
-<Diagramme/ENTREPRISE/"Valider la diffusion du rapport".png, id=625, 643.40375p
+<Diagramme/ENTREPRISE/"Valider la diffusion du rapport".png, id=645, 643.40375p
 t x 427.5975pt>
 File: Diagramme/ENTREPRISE/"Valider la diffusion du rapport".png Graphic file (
 type png)
 
 <use Diagramme/ENTREPRISE/"Valider la diffusion du rapport".png>
 Package pdftex.def Info: Diagramme/ENTREPRISE/"Valider la diffusion du rapport"
-.png used on input line 578.
+.png used on input line 581.
 (pdftex.def)             Requested size: 418.25555pt x 277.97423pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 578--579
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 581--582
  [][] 
  []
 
-[40 <./Diagramme/ENTREPRISE/Signer - remplir la convention.png (PNG copy)> <./D
+[42 <./Diagramme/ENTREPRISE/Signer - remplir la convention.png (PNG copy)> <./D
 iagramme/ENTREPRISE/Suivre son stagiaire.png>]
 <Diagramme/ADMIN/"Acceder a la fiche de renseignements et autres documents".png
-, id=631, 496.85625pt x 264.99pt>
+, id=651, 496.85625pt x 264.99pt>
 File: Diagramme/ADMIN/"Acceder a la fiche de renseignements et autres documents
 ".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"Acceder a la fiche de renseignements et autres documents"
 .png>
 Package pdftex.def Info: Diagramme/ADMIN/"Acceder a la fiche de renseignements 
-et autres documents".png used on input line 582.
+et autres documents".png used on input line 585.
 (pdftex.def)             Requested size: 418.25555pt x 223.07124pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 582--583
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 585--586
  [] 
  []
 
 
-<Diagramme/ADMIN/"Gerer des statistiques".png, id=632, 289.08pt x 154.32657pt>
+<Diagramme/ADMIN/"Gerer des statistiques".png, id=652, 289.08pt x 154.32657pt>
 File: Diagramme/ADMIN/"Gerer des statistiques".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"Gerer des statistiques".png>
 Package pdftex.def Info: Diagramme/ADMIN/"Gerer des statistiques".png used on i
-nput line 584.
+nput line 587.
 (pdftex.def)             Requested size: 418.25555pt x 223.29915pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 584--585
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 587--588
  [][] 
  []
 
-[41 <./Diagramme/ENTREPRISE/Valider la diffusion du rapport.png (PNG copy)> <./
+[43 <./Diagramme/ENTREPRISE/Valider la diffusion du rapport.png (PNG copy)> <./
 Diagramme/ADMIN/Acceder a la fiche de renseignements et autres documents.png (P
 NG copy)>]
-<Diagramme/ADMIN/"Gerer attribution du tuteur academique".png, id=637, 684.5575
+<Diagramme/ADMIN/"Gerer attribution du tuteur academique".png, id=658, 684.5575
 pt x 365.365pt>
 File: Diagramme/ADMIN/"Gerer attribution du tuteur academique".png Graphic file
  (type png)
 
 <use Diagramme/ADMIN/"Gerer attribution du tuteur academique".png>
 Package pdftex.def Info: Diagramme/ADMIN/"Gerer attribution du tuteur academiqu
-e".png used on input line 586.
+e".png used on input line 589.
 (pdftex.def)             Requested size: 418.25555pt x 223.24026pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 586--587
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 589--590
  [][] 
  []
 
-<Diagramme/ADMIN/"Valider les stages".png, id=638, 609.27625pt x 499.8675pt>
+<Diagramme/ADMIN/"Valider les stages".png, id=659, 609.27625pt x 499.8675pt>
 File: Diagramme/ADMIN/"Valider les stages".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"Valider les stages".png>
 Package pdftex.def Info: Diagramme/ADMIN/"Valider les stages".png used on input
- line 588.
+ line 591.
 (pdftex.def)             Requested size: 418.25555pt x 343.16228pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 588--589
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 591--592
  [][] 
  []
 
-[42 <./Diagramme/ADMIN/Gerer des statistiques.png> <./Diagramme/ADMIN/Gerer att
+[44 <./Diagramme/ADMIN/Gerer des statistiques.png> <./Diagramme/ADMIN/Gerer att
 ribution du tuteur academique.png (PNG copy)>]
 <Diagramme/ENSEIGNANT/"Acceder a la fiche de renseignements et autres documents
-2".png, id=644, 495.8525pt x 264.99pt>
+2".png, id=665, 495.8525pt x 264.99pt>
 File: Diagramme/ENSEIGNANT/"Acceder a la fiche de renseignements et autres docu
 ments2".png Graphic file (type png)
 
 <use Diagramme/ENSEIGNANT/"Acceder a la fiche de renseignements et autres docum
 ents2".png>
 Package pdftex.def Info: Diagramme/ENSEIGNANT/"Acceder a la fiche de renseignem
-ents et autres documents2".png used on input line 593.
+ents et autres documents2".png used on input line 596.
 (pdftex.def)             Requested size: 418.25555pt x 223.52411pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 593--594
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 596--597
  [] 
  []
 
-[43 <./Diagramme/ADMIN/Valider les stages.png (PNG copy)>]
-<Diagramme/ENSEIGNANT/"Demander pour faire une visite".png, id=650, 669.50125pt
+[45 <./Diagramme/ADMIN/Valider les stages.png (PNG copy)>]
+<Diagramme/ENSEIGNANT/"Demander pour faire une visite".png, id=670, 669.50125pt
  x 307.1475pt>
 File: Diagramme/ENSEIGNANT/"Demander pour faire une visite".png Graphic file (t
 ype png)
  <use Diagramme/ENSEIGNANT/"Demander pour faire une visite".png>
 Package pdftex.def Info: Diagramme/ENSEIGNANT/"Demander pour faire une visite".
-png used on input line 595.
+png used on input line 598.
 (pdftex.def)             Requested size: 418.25555pt x 191.89172pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 595--596
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 598--599
  [][] 
  []
 
 
-<Diagramme/ENSEIGNANT/"Donner une note - un avis".png, id=651, 460.72125pt x 29
+<Diagramme/ENSEIGNANT/"Donner une note - un avis".png, id=671, 460.72125pt x 29
 6.10625pt>
 File: Diagramme/ENSEIGNANT/"Donner une note - un avis".png Graphic file (type p
 ng)
  <use Diagramme/ENSEIGNANT/"Donner une note - un avis".png>
 Package pdftex.def Info: Diagramme/ENSEIGNANT/"Donner une note - un avis".png u
-sed on input line 597.
+sed on input line 600.
 (pdftex.def)             Requested size: 418.25555pt x 268.81099pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 597--598
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 600--601
  [][] 
  []
 
-[44 <./Diagramme/ENSEIGNANT/Acceder a la fiche de renseignements et autres docu
+[46 <./Diagramme/ENSEIGNANT/Acceder a la fiche de renseignements et autres docu
 ments2.png (PNG copy)> <./Diagramme/ENSEIGNANT/Demander pour faire une visite.p
 ng (PNG copy)>]
-<Diagramme/ADMIN/"diagActi".png, id=656, 764.10469pt x 159.59625pt>
+<Diagramme/ADMIN/"diagActi".png, id=676, 764.10469pt x 159.59625pt>
 File: Diagramme/ADMIN/"diagActi".png Graphic file (type png)
 
 <use Diagramme/ADMIN/"diagActi".png>
-Package pdftex.def Info: Diagramme/ADMIN/"diagActi".png used on input line 603.
+Package pdftex.def Info: Diagramme/ADMIN/"diagActi".png used on input line 606.
 
 (pdftex.def)             Requested size: 418.25555pt x 87.35933pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 603--604
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 606--607
  [] 
  []
 
-[45 <./Diagramme/ENSEIGNANT/Donner une note - un avis.png (PNG copy)> <./Diagra
+[47 <./Diagramme/ENSEIGNANT/Donner une note - un avis.png (PNG copy)> <./Diagra
 mme/ADMIN/diagActi.png>]
 Chapter 4.
-[46
+[48
 
 ]
-Overfull \hbox (5.9966pt too wide) in paragraph at lines 633--634
+Overfull \hbox (5.9966pt too wide) in paragraph at lines 636--637
 []\OT1/cmr/m/n/10.95 avant de signer la con-ven-tion de stage, lorsque celui-ci
  a lieu ^^Ra l'^^Setranger, l'attestation
  []
 
-[47]
-Overfull \hbox (6.38118pt too wide) in paragraph at lines 662--680
+[49]
+Overfull \hbox (6.38118pt too wide) in paragraph at lines 667--685
  [][] 
  []
 
 
-Overfull \hbox (5.04283pt too wide) in paragraph at lines 685--695
+Overfull \hbox (5.04283pt too wide) in paragraph at lines 690--700
  [][] 
  []
 
-[48
+[50
 
 ]
-Overfull \hbox (40.1437pt too wide) in paragraph at lines 701--720
+Overfull \hbox (40.1437pt too wide) in paragraph at lines 706--725
  [][] 
  []
 
 
-Overfull \hbox (53.10121pt too wide) in paragraph at lines 725--739
+Overfull \hbox (53.10121pt too wide) in paragraph at lines 730--744
  [][] 
  []
 
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 760--760
 []|\OT1/cmr/m/n/10.95 Langage(s) de pro-gram-ma-tion
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 759--759
+Underfull \hbox (badness 1057) in paragraph at lines 764--764
 []|\OT1/cmr/m/n/10.95 Dur^^See heb-do-madaire max-i-mal de
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 763--763
+Underfull \hbox (badness 4416) in paragraph at lines 768--768
 []|\OT1/cmr/m/n/10.95 Liste des avan-tages ac-cord^^Ses ^^Ra
  []
 
 
-Overfull \hbox (37.9413pt too wide) in paragraph at lines 745--769
+Overfull \hbox (37.9413pt too wide) in paragraph at lines 750--774
  [][] 
  []
 
 
-Overfull \hbox (37.9413pt too wide) in paragraph at lines 774--789
+Overfull \hbox (37.9413pt too wide) in paragraph at lines 779--794
  [][] 
  []
 
-[50]
-Overfull \hbox (37.9413pt too wide) in paragraph at lines 795--805
- [][] 
- []
-
-
-Overfull \hbox (7.17204pt too wide) in paragraph at lines 810--822
+[52]
+Overfull \hbox (37.9413pt too wide) in paragraph at lines 800--810
  [][] 
  []
 
 
-Overfull \hbox (40.29582pt too wide) in paragraph at lines 827--839
+Overfull \hbox (7.17204pt too wide) in paragraph at lines 815--827
  [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 840.
-[51]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 840.
+
+Overfull \hbox (40.29582pt too wide) in paragraph at lines 832--844
+ [][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 845.
+[53]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 845.
  (./MOCI1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 840.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 840.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 845.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 845.
 Package rerunfilecheck Info: File `MOCI1.out' has not changed.
-(rerunfilecheck)             Checksum: 224B2BA24DB39E27D7EA3CB53594D262;4181.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 840.
+(rerunfilecheck)             Checksum: 6D42B1B0ED756996249F9401FFCD7CC2;4334.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 845.
  ) 
 Here is how much of TeX's memory you used:
- 9734 strings out of 493304
- 149025 string characters out of 6139871
- 283819 words of memory out of 5000000
- 12830 multiletter control sequences out of 15000+600000
+ 9750 strings out of 493304
+ 149443 string characters out of 6139871
+ 283840 words of memory out of 5000000
+ 12840 multiletter control sequences out of 15000+600000
  10492 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,12n,39p,551b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1375,10 +1395,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb>
-Output written on MOCI1.pdf (51 pages, 1167155 bytes).
+Output written on MOCI1.pdf (53 pages, 1258411 bytes).
 PDF statistics:
- 769 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
- 226 named destinations out of 1000 (max. 500000)
- 636 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 789 PDF objects out of 1000 (max. 8388607)
+ 653 compressed objects within 7 object streams
+ 229 named destinations out of 1000 (max. 500000)
+ 662 words of extra memory for PDF output out of 10000 (max. 10000000)
 

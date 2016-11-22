@@ -54,16 +54,18 @@
 \contentsline {subsubsection}{\hbox to\hsize {\hss D\IeC {\'e}tails \IeC {\'e}l\IeC {\`e}ves\hss }}{30}{subsection.3.3.2}
 \contentsline {subsubsection}{\hbox to\hsize {\hss Listing entreprises\hss }}{31}{subsection.3.3.2}
 \contentsline {subsubsection}{\hbox to\hsize {\hss D\IeC {\'e}tails entreprises\hss }}{32}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Diagrammes de s\'equence}{33}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Pour les \IeC {\'e}l\IeC {\`e}ves}{33}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Pour la scolarit\IeC {\'e}}{36}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Pour l'entreprise}{39}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Pour l'administration}{41}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Pour le Tuteur}{44}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Diagramme d'activit\IeC {\'e}}{45}{section.3.5}
-\contentsline {chapter}{\numberline {4}Besoins non fonctionnels}{46}{chapter.4}
-\contentsline {section}{\numberline {4.1}Li\'es \`a la s\'ecurit\'e}{46}{section.4.1}
-\contentsline {section}{\numberline {4.2}Li\'es aux \'ev\`enements}{46}{section.4.2}
-\contentsline {section}{\numberline {4.3}Li\'es aux utilisateurs}{46}{section.4.3}
-\contentsline {section}{\numberline {4.4}Li\'es aux documents}{47}{section.4.4}
-\contentsline {section}{\numberline {4.5}Li\'es aux performances}{47}{section.4.5}
+\contentsline {section}{\numberline {3.4}Diagrammes de cas d'utilisation}{33}{section.3.4}
+\contentsline {section}{\numberline {3.5}Diagrammes de s\'equence}{35}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Pour les \IeC {\'e}l\IeC {\`e}ves}{35}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Pour la scolarit\IeC {\'e}}{38}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Pour l'entreprise}{41}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Pour l'administration}{43}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Pour le Tuteur}{46}{subsection.3.5.5}
+\contentsline {section}{\numberline {3.6}Diagramme d'activit\IeC {\'e}}{47}{section.3.6}
+\contentsline {chapter}{\numberline {4}Besoins non fonctionnels}{48}{chapter.4}
+\contentsline {section}{\numberline {4.1}Li\'es \`a la s\'ecurit\'e}{48}{section.4.1}
+\contentsline {section}{\numberline {4.2}Li\'es aux \'ev\`enements}{48}{section.4.2}
+\contentsline {section}{\numberline {4.3}Li\'es aux utilisateurs}{48}{section.4.3}
+\contentsline {section}{\numberline {4.4}Li\'es aux documents}{49}{section.4.4}
+\contentsline {section}{\numberline {4.5}Li\'es aux performances}{49}{section.4.5}
+\contentsline {chapter}{Annexe A - Dictionnaire de donn\IeC {\'e}es}{50}{appendix*.2}
