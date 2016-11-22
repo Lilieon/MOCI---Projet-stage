@@ -99,12 +99,13 @@ Elle est aussi destinée à être utilisée par les entreprises, à travers les 
 
 
 \section{Outils utilisés}
-Plantuml : Outil utilisé pour la réalisation des diagrammes de séquence : http://plantuml.com/ 
-PlantText : Editeur pour plantuml : https://www.planttext.com/
-Adobe Fireworks : Logiciel utilisé pour la réalisation des interfaces
-Mocodo :  Outil utilisé pour la réalisation du modèle de données : http://mocodo.wingi.net/
-MikTex : Distribution Tex pour windows comprenant l’éditeur texWorks https://miktex.org/
-
+\begin{itemize}
+\item Plantuml : Outil utilisé pour la réalisation des diagrammes de séquence : http://plantuml.com/ 
+\item PlantText : Editeur pour plantuml : https://www.planttext.com/
+\item Adobe Fireworks : Logiciel utilisé pour la réalisation des interfaces
+\item Mocodo :  Outil utilisé pour la réalisation du modèle de données : http://mocodo.wingi.net/
+\item MikTex : Distribution Tex pour windows comprenant l’éditeur texWorks https://miktex.org/
+\end{itemize}
 
 \chapter{Vue d'ensemble et fonctionnement g\'en\'eral}
 
@@ -475,44 +476,58 @@ Acteurs : scolarité
 \centering
 \subsubsection{\centerline{Connexion}}
 \fbox{\includegraphics[width=\textwidth]{"1Connexion"}}
+\newpage
 
 \subsubsection{\centerline{Tableau de bord}}
 \fbox{\includegraphics[width=\textwidth]{"2Tableau de bord"}}
+\newpage
 
 \subsubsection{\centerline{Fiche renseignement}}
 \fbox{\includegraphics[width=\textwidth]{"3Fiche renseignement"}}
+\newpage
 
-\subsubsection{\centerline{Convention impossiblet}}
+\subsubsection{\centerline{Convention impossible}}
 \fbox{\includegraphics[width=\textwidth]{"4Convention impossible"}}
+\newpage
 
 \subsubsection{\centerline{Convention signée}}
 \fbox{\includegraphics[width=\textwidth]{"5Convention signee"}}
+\newpage
+
 
 \subsubsection{\centerline{Convention à signer}}
 \fbox{\includegraphics[width=\textwidth]{"6Convention a signer"}}
+\newpage
 
-\subsubsection{\centerline{Convention popup}}
+\subsubsection{\centerline{convention - popup signature électronique}}
 \fbox{\includegraphics[width=\textwidth]{"7Convention popup"}}
+\newpage
 
-\subsubsection{\centerline{Documents admin}}
+\subsubsection{\centerline{Documents administratifs}}
 \fbox{\includegraphics[width=\textwidth]{"8Documents admin"}}
+\newpage
 
-\subsubsection{\centerline{Documents admin popup}}
+\subsubsection{\centerline{documents administratifs - popup ajout d’un document}}
 \fbox{\includegraphics[width=\textwidth]{"9Documents admin popup"}}
+\newpage
 
 \subsection{Scolarit\'e}
 
 \subsubsection{\centerline{Listing élèves}}
 \fbox{\includegraphics[width=\textwidth]{"s1Listing eleves"}}
+\newpage 
 
 \subsubsection{\centerline{Détails élèves}}
 \fbox{\includegraphics[width=\textwidth]{"s2Details eleves"}}
+\newpage
 
 \subsubsection{\centerline{Listing entreprises}}
 \fbox{\includegraphics[width=\textwidth]{"s3Listing entreprises"}}
+\newpage
 
 \subsubsection{\centerline{Détails entreprises}}
 \fbox{\includegraphics[width=\textwidth]{"s4Details entreprises"}}
+\newpage
 
 
 
@@ -554,11 +569,7 @@ Acteurs : scolarité
 
 \fbox{\includegraphics[width=\textwidth]{"Acceder au rapport"}}
 
-\fbox{\includegraphics[width=\textwidth]{"Accepter visite"}}
-
 \fbox{\includegraphics[width=\textwidth]{"Donner son avis sur le stage etudiant"}}
-
-\fbox{\includegraphics[width=\textwidth]{"Remplir le questionnaire d'evaluation"}}
 
 \fbox{\includegraphics[width=\textwidth]{"Signer - remplir la convention"}}
 
@@ -582,8 +593,6 @@ Acteurs : scolarité
 \fbox{\includegraphics[width=\textwidth]{"Acceder a la fiche de renseignements et autres documents2"}}
 
 \fbox{\includegraphics[width=\textwidth]{"Acceder aux informations"}}
-
-\fbox{\includegraphics[width=\textwidth]{"Demander pour faire une visite"}}
 
 \fbox{\includegraphics[width=\textwidth]{"Donner une note - un avis"}}
 
@@ -781,17 +790,6 @@ add_envoi & Destination choisi pour l'envoi des documents (2 choix possibles) & 
 \begin{flushleft}
 \textbf{Scolarit\'e}
 \end{flushleft}
-
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Nom symbolique} & \textbf{Description} & \textbf{Type} & \textbf{Contraintes} \\
-\hline
-nom & Nom de la personne charg\'e de la gestion du stage de l'\'etudiant & Alphanum\'erique & Cl\'e primaire & \\
-pr\'enom & & Alphanum\'erique & Cl\'e primaire \\
-mail & Adresse email & Alphanum\'erique & \\
-mdp & Mot de passe & Alphanum\'erique & \\
-\hline
-\end{tabular}
 
 \newpage
 \begin{flushleft}
