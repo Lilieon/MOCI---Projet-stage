@@ -88,19 +88,19 @@
 \chapter{Introduction}
 
 \section{A propos du document}
-Le présent document vise à spécifier les acteurs, les fonctionnalités et besoins, ainsi que les différents cas d’utilisation relatifs au développement d’une application de gestion des stages pour les élèves de TELECOM Nancy. L’application a pour objectif de simplifier et automatiser la gestion des stages de deuxième (2A) et troisième (3A) année ainsi qu’offrir un suivi statistique.
+Le présent document vise à spécifier les acteurs, les fonctionnalités et besoins, ainsi que les différents cas d’utilisation relatifs au développement d’une application de gestion des stages pour les élèves de TELECOM Nancy. L’application a pour objectif de simplifier et automatiser la gestion des stages de deuxième (2A) et troisième (3A) année ainsi que d’offrir un suivi statistique.
 
 \section{Public concerné et vue d’ensemble du produit}
 Ce cahier des charges est à destination de l’administration de l’école qui est commanditaire du projet d’application de gestion des stages. Il vise à mettre en lien les besoins de l’administration et les fonctionnalités à mettre en oeuvre par les développeurs de l’application. 
 
 \section{ Portée du produit}
-L’application de gestion des stages est à destination de toutes les personnes internes à l’école qui sont amenées à être en lien avec un stage : élèves, enseignants, personnel de la scolarité et administratifs.
+L’application de gestion des stages est à destination de toutes les personnes internes à l’école qui sont amenées à être en lien avec un stage : élèves, enseignants, personnels de la scolarité et administratifs.
 Elle est aussi destinée à être utilisée par les entreprises, à travers les maîtres de stage.
 
 
 \section{Outils utilisés}
 \begin{itemize}
-\item Plantuml : Outil utilisé pour la réalisation des diagrammes de séquence : http://plantuml.com/ 
+\item Plantuml : Outil utilisé pour la réalisation des diagrammes de cas d'utilisation et de séquence : http://plantuml.com/ 
 \item PlantText : Editeur pour plantuml : https://www.planttext.com/
 \item Adobe Fireworks : Logiciel utilisé pour la réalisation des interfaces
 \item Mocodo :  Outil utilisé pour la réalisation du modèle de données : http://mocodo.wingi.net/
@@ -110,14 +110,14 @@ Elle est aussi destinée à être utilisée par les entreprises, à travers les 
 \chapter{Vue d'ensemble et fonctionnement g\'en\'eral}
 
 \section{Fonctionnement global}
-Le système doit permettre le suivi des stages des élèves de l’école, par année universitaire et par promotion. Les utilisateurs en lien avec le stage doivent se connecter et effectuer différentes actions selon des échéances précises. L’objectif principal du système est d’automatiser le traitement de certaines tâches (tel que l’édition de la convention de stage), simplifier la procédure pour chacune des parties et permettre un suivi statistique.
+Le système doit permettre le suivi des stages des élèves de l’école, par année universitaire et par promotion. Les utilisateurs en lien avec le stage doivent se connecter et effectuer différentes actions selon des échéances précises. L’objectif principal du système est d’automatiser le traitement de certaines tâches (telle que l’édition de la convention de stage), simplifier la procédure pour chacune des parties et permettre un suivi statistique.
 
 \section{Acteurs}
 \subsection{\'El\`eve}
 Il se caract\'erise par : son nom, son pr\'enom, son adresse e-mail, sa date de naissance, son sexe, sa promotion et son approfondissement. Il peut \'editer son adresse et son num\'ero de t\'el\'ephone, via la page “profil”.
 
 \subsection{Ma\^itre de stage}
-Il se d\'efinit par son nom, son pr\'enom, sa fonction, son t\'el\'ephone, fax et email. Il appartient \`a un service, lui-m\^eme caract\'eris\'e par son nom et son adresse postale, appartenant à l’entreprise définit par son nom, son adresse, son t\'el\'ephone, fax, email, site web,  num\'ero de SIRET, effectif… Ces informations sont fournies par l’\'el\`eve lors de l’\'edition d’une fiche de renseignement ; les acc\`es \`a la plateforme pour le ma\^itre de stage sont eux cr\'ees par l’administration.
+Il se d\'efinit par son nom, son pr\'enom, sa fonction, son t\'el\'ephone, fax et email. Il appartient \`a un service, lui-m\^eme caract\'eris\'e par son nom et son adresse postale, appartenant à l’entreprise définie par son nom, son adresse, son t\'el\'ephone, fax, email, site web,  num\'ero de SIRET, effectif… Ces informations sont fournies par l’\'el\`eve lors de l’\'edition d’une fiche de renseignement ; les acc\`es \`a la plateforme pour le ma\^itre de stage sont eux cr\'eés par l’administration.
 
 \subsection{Tuteur acad\'emique}
 Il se caract\'erise par son nom, son pr\'enom, son t\'el\'ephone et email ainsi que sa fonction. Il peut \'editer son adresse postale et son num\'ero de t\'el\'ephone.
@@ -125,13 +125,13 @@ Le tuteur acad\'emique peut aussi \^etre directeur ou responsable de stage.
 
 \newpage
 \subsection{Scolarit\'e}
-Elle est d\'efinit par son nom, son pr\'enom et son adresse email.
+Elle est d\'efinie par son nom, son pr\'enom et son adresse email.
 
 \subsection{Administration}
 Compte super utilisateur, il distingue les responsables de stage et le directeur qui peuvent se connecter aussi en tant que tuteur acad\'emique.
 
 \section{Fonctionnalit\'es}
-Le syst\`eme doit permettre aux utilisateurs d’effectuer diff\'erentes actions relatives \'a la gestion des stages.
+Le syst\`eme doit permettre aux utilisateurs d’effectuer diff\'erentes actions relatives à la gestion des stages.
 \subsection{Gestion des utilisateurs}
 Tous les utilisateurs :
 \begin{itemize}
@@ -141,7 +141,7 @@ Tous les utilisateurs :
 Scolarit\'e :
 \begin{itemize}
 \item la scolarit\'e g\`ere les \'el\`eves redoublants
-\item la scolarit\'e acc\`ede aux listes des entreprises et des \'el`eves
+\item la scolarit\'e acc\`ede aux listes des entreprises et des \'elèves
 \end{itemize}
 Administration : 
 \begin{itemize}
@@ -173,12 +173,12 @@ Responsables des stages :
 \begin{itemize}
 \item les responsables des stages valident les fiches de renseignement
 \end{itemize}
-Ma\^itres des stages : 
+Ma\^itres de stage : 
 \begin{itemize}
 \item les ma\^itres de stage remplissent l’\'evaluation de stage de l’\'el\`eve et attribuent une note
-\item les ma\^itres de stages valident le rapport d\'epos\'e par l’\'el\`eve
+\item les ma\^itres de stage valident le rapport d\'epos\'e par l’\'el\`eve
 \end{itemize}
-Tuteurs acad\'emique
+Tuteurs acad\'emiques
 \begin{itemize}
 \item les tuteurs acad\'emiques notent les rapports et soutenances de leurs \'el\`eves
 \end{itemize}
@@ -201,7 +201,7 @@ Elèves :
 
 Système :
 \begin{itemize}
-\item le syst\`eme notifie automatiquement les utilisateurs lorsqu’une action requiert leur attention
+\item le syst\`eme notifie automatiquement les utilisateurs lorsqu’une action requiert leurs attention
 le syst\`eme valide automatiquement les stages des \'el\`eves selon leurs notes (de stage,de rapport et de soutenance) et le barème
 \end{itemize}
 \chapter{Besoins spécifiques}
@@ -211,12 +211,12 @@ Acteurs : Tous
 \\
 \'Etapes :
 \begin{enumerate}
-\item L’acteur entre son adresse email et son mot de passe de l’universit\'e puis valide
+\item L’acteur entre son adresse email et son mot de passe puis valide
 \item Le syst\`eme v\'erifie les informations et notifie l’acteur qu’il est bien connect\'e
 \end{enumerate} 
 Alternative : 
 \begin{enumerate}
-\item L’acteur entre son adresse mail et mot de passe de l’universit\'e puis valide
+\item L’acteur entre son adresse mail et mot de passe puis valide
 \item Le syst\`eme v\'erifie les informations et notifie l’acteur que ses informations sont erron\'ees. Il invite l’utilisateur \`a essayer \`a nouveau
 \end{enumerate}
 \subsection{Gérer ses informations personnelles}
@@ -228,10 +228,10 @@ Acteurs : Tous
 \item Le syst\`eme affiche le compte de l’utilisateur 
 \item L’acteur modifie ses informations \'editables
 \item Le syst\`eme notifie \`a l’acteur que ses modifications ont bien \'et\'e enregistr\'ees
-\item (4bis) Le système notifie l’acteur qu’une erreur s’est produite et que ses modifications n’ont pas été prise en compte
+\item (4bis) Le système notifie l’acteur qu’une erreur s’est produite et que ses modifications n’ont pas été prises en compte
 \end{enumerate}
 \subsection{Acc\'eder \`a la fiche de suivi}
-Acteurs : Tous sauf Ma\^itres de stage
+Acteurs : Tous sauf ma\^itres de stage
 \\
 \'Etapes : 
 \begin{enumerate}
@@ -249,7 +249,7 @@ Acteurs : \'El\`eves
 \item L’acteur t\'el\'echarge le document sur le site
 \item Le syst\`eme notifie l’acteur que l’op\'eration s’est bien d\'eroul\'ee 
 \item (4bis) Le syst\`eme notifie l’acteur que son document n’est pas valide et lui propose de r\'eessayer
-\item Le syst\`eme envoie une notification aux acteurs concern\'es qu’un document a \'et\'e d\'epos\'e
+\item Le syst\`eme envoie une notification aux acteurs concern\'es indiquant qu’un document a \'et\'e d\'epos\'e
 \end{enumerate}
 \subsection{Acc\'eder \`a un document relatif au stage}
 Acteurs :
@@ -284,7 +284,7 @@ Acteurs : élèves
 Acteurs :
 \begin{itemize}
 \item responsables des stages pour la fiche de renseignement
-\item maîtres de stages pour le rapport
+\item maîtres de stage pour le rapport
 \end{itemize}
 
 \'Etapes : 
@@ -308,7 +308,7 @@ Acteurs : Ma\^itres de stage
 \item L’acteur s\'electionne un \'el\`eve
 \item Le syst\`eme affiche la fiche d\'etaill\'ee de l’\'el\`eve
 \item L’acteur acc\`ede au questionnaire 
-\item L’acteur rempli le questionnaire 
+\item L’acteur remplit le questionnaire 
 \item L’acteur valide le questionnaire
 \item (7bis) L’acteur enregistre le questionnaire sans l’avoir termin\'e
 \item Le syst\`eme notifie l’acteur que son document a bien \'et\'e enregistr\'e
@@ -358,7 +358,7 @@ Acteurs : scolarité
 \item Le système notifie l’acteur que son événement a bien été ajouté
 \item Le système notifie les acteurs concernés de l’ajout de l’événement
 \item (4bis) Le système notifie l’acteur que l’événement n’a pas pu être créé et le renvoie sur le planning
-\item Alternative : (1bis) L’acteur choisit un élève dans l’annuaire puis sélectionne planning (ajout automatique de l’événement à la personne) -> étape 4
+\item Alternative : (1bis) L’acteur choisit un élève dans l’annuaire puis sélectionne planning (ajout automatique de l’événement à la personne) -\textgreater étape 4
 \end{enumerate}
 \subsection{Etablir les statistiques}
 Acteurs : administration
@@ -370,7 +370,7 @@ Acteurs : administration
 \item L’acteur choisit les éléments sur lesquels il souhaite afficher les statistiques
 \item Le système affiche les éléments sur la durée définie
 \item L’acteur peut télécharger ces résultats
-\item (4bis) Le système notifie qu’une erreur s’est produite à cause du choix des éléments incompatibles et invite l’acteur effectuer une autre opération ou choisir d’autres éléments
+\item (4bis) Le système notifie qu’une erreur s’est produite à cause du choix des éléments incompatibles et invite l’acteur à effectuer une autre opération ou choisir d’autres éléments
 \item (4ter) Le système notifie qu’une erreur inconnue s’est produite et l’invite à réessayer ultérieurement
 \end{enumerate}
 \subsection{Gérer les droits des utilisateurs}
@@ -382,7 +382,7 @@ Acteurs : administration
 \item Le système affiche l’ensemble des utilisateurs avec quelques informations
 \item L’acteur sélectionne une personne ou un groupe de personne
 \item Le système affiche ces personnes
-\item (4bis) Le système notifie l’acteur qu’aucune personne n’a été sélectionnée et invite l’acteur et réessayer
+\item (4bis) Le système notifie l’acteur qu’aucune personne n’a été sélectionnée et l'invite à réessayer
 \item L’acteur modifie les droits pour ces personnes
 \item Le système notifie l’acteur que les droits ont bien été modifié
 \item (7bis) Le système notifie l’acteur qu’une erreur s’est produite et renvoie sur l’annuaire
@@ -414,7 +414,7 @@ Acteurs : administration
 \item L’acteur choisi “nouvel utilisateur”
 \item Le système renvoie une fiche de modèle entreprise vide à l’acteur 
 \item L’acteur remplit la fiche
-\item (4bis) l’acteur choisi dans un menu un élève 
+\item (4bis) l’acteur choisit dans un menu un élève 
 \item Le système remplit certaines informations automatiquement grâce à la fiche de l’élève
 \item L’acteur complète la fiche
 \item L’acteur enregistre la fiche
@@ -442,7 +442,7 @@ Acteurs : scolarité
 \'Etapes :
 \begin{enumerate}
 \item L’acteur se rend sur l’annuaire, par défaut tous les élèves passent à l’année supérieure
-\item L’acteur sélectionne un ou plusieurs élèves(s)
+\item L’acteur sélectionne un ou plusieurs élèves
 \item L’acteur choisi de leur affecter le statut redoublant
 \item Le système met à jour automatiquement l’année d’étude des redoublants
 \item Le système notifie l’acteur que sa modification a bien été enregistrée 
@@ -838,7 +838,7 @@ prénom & & Alphanumérique & Clé primaire \\
 mdp & Mot de passe & Alphanumérique & \\
 fonction & Fonction au sein de l'administration & Alphanumérique & \\
 tel & Numéro de téléphone & Alphanumérique & \\
-mail & Adresse email université de lorraine & Alphanumérique & \\
+mail & Adresse email & Alphanumérique & \\
 \hline
 \end{tabular}
 
